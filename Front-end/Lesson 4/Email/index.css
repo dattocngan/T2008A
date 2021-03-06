@@ -1,0 +1,79 @@
+body{
+	background-color: rgb(255,255,240);
+	padding-left: 20%;
+}
+.textarea{
+	overflow: auto;
+}
+.imgHelp{
+	cursor: help;
+}
+.EmailEditor{
+	background-color:  #FFFFDD;
+}
+#main{
+	width: 400px;
+	background-color: #DDFFEE;
+	padding-left: 10px;
+	padding-right: 10px; 
+}
+#help{
+	position: absolute;
+	width: 500px;
+	height: 420px;
+	top: 10px;
+	background-color: #cfc;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: solid 2px #303030;
+}
+#close{
+	text-align: right;
+	color: blue;
+	cursor: hand;
+}
+ul.trang2{
+	list-style-image: url(bullet.jpg);
+	list-style-type: square;
+}
+form{
+	margin-left: 20px;
+}
+.put{
+	padding-top:17px;
+	padding-bottom: 13px;
+	font-size: 25px;
+	font-weight: bold;
+}
+li.dat{
+	margin-left: -91px;
+    width: 386px;
+    list-style-type: none;
+    text-align: right;
+    padding-bottom: 5px;
+}
+.cancel{
+	margin-left: 95px;
+	margin-top: -16.5px;
+}
+.send{
+	position: absolute;
+	top: 217px;
+	left: 387px;
+}
+.help{
+	position: absolute;
+	top: 28px;
+    right: 695px;
+    font-size: 20px;
+    font-family:arial;
+    color: #2c24d1;
+    font-weight: bold;
+}
+span.dat{
+	background-color: #DDFFEE;
+	text-decoration: none;
+}
+a{
+	text-decoration: none;
+}

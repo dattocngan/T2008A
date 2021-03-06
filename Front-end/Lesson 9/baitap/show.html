@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Information</title>
+</head>
+<body>
+    <button onclick="ShowInfor()">Show Information</button>
+    <div id="show"></div>
+        <script>
+            function ShowInfor() {
+                document.getElementById('show').innerHTML=`
+                <form>
+                    <p>
+                        <label>Full Name:</label>
+                        <input type="text" id="fullname_form" disabled>
+                    </p>
+                    <p>
+                        <label>Age:</label>
+                        <input type="number" id="age_form" disabled>
+                    </p>
+                    <p>
+                        <label>Email:</label>
+                        <input type="email" id="email_form" disabled>
+                    </p>
+                </form>
+                `
+                document.getElementById('fullname_form').value=localStorage.getItem('fullname_db')
+                document.getElementById('age_form').value=localStorage.getItem('age_db')
+                document.getElementById('email_form').value=localStorage.getItem('email_db')
+            }
+        </script>
+</body>
+</html>

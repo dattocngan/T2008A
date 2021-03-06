@@ -1,0 +1,74 @@
+.top{
+    width: 99%;
+    height: auto;
+    background-color: rgb(248, 213, 231);
+    border: 1px solid palevioletred;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.border1{
+    margin-top: 40px;
+    width: 99.56%;
+    height: 139px;
+    border: 2px solid palevioletred;
+}
+.border2{
+    margin-top: 30px;
+    width: 99.56%;
+    height: 204px;
+    border: 2px solid palevioletred;
+}
+.information1{
+    width: 1491px;
+    height: 112px;
+    margin: 0 auto;
+    margin-top: 12px;
+    background-color: rgb(248, 213, 231);
+}
+.information2{
+    width: 1491px;
+    height: 178px;
+    margin: 0 auto;
+    margin-top: 12px;
+    background-color: rgb(248, 213, 231);
+    display: flex;
+}
+.col1{
+    margin-left: 41px;
+}
+.col2{
+    margin-left: 170.2px;
+}
+.col3{
+    margin-left: 70px;
+}
+.col4{
+    margin-left: 145px;
+}
+.col5{
+    margin-left: 186px;
+}
+.col6{
+    margin-left: 177px;
+}
+input.hiddenscrollbar::-webkit-outer-spin-button,
+input.hiddenscrollbar::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+form{
+    display: flex;
+}
+.content{
+    height: 100%;
+    width: 243px;
+    margin-left: 41px;
+}
+.box{
+    height: 100%;
+    width: 400px;
+}
+div.editchu{
+   padding-bottom: 4px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lí sản phẩm</title>
+    <style>
+        .main{
+            border: 1px solid #4970a3;
+            border-radius: 5px;
+            width: 800px;
+            height: 472px;
+            display: block;
+        }
+        .top{
+            background-color: #4970a3;
+            width: 99.4%;
+            height: 30px;
+            padding-left: 5px;
+            padding-top: 5px;
+            color: white;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            margin-bottom: 16px;
+        }
+    </style>
+    <script>
+        function changeManufacturer() {
+            var v=document.getElementById('select1').value;
+            //menh de dieu kien.
+            switch(v){
+                case 'apple':
+                    var manu1=document.getElementById('nsx');
+                        manu1.innerHTML=`
+                        <option>Iphone X</option>
+                        <option>Ipad</option>
+                        <option>Ipad Pro</option>
+                        `
+                        manu1.disabled = false
+                break;  
+                case 'vsmart':
+                    var manu2=document.getElementById('nsx');
+                        manu2.innerHTML=`
+                        <option>Vsmart Active 1 plus</option>
+                        <option>Vsmart Live</option>
+                        <option>Vsmart Joy</option>
+                        `
+                        manu2.disabled = false
+                break;  
+                case 'samsung':
+                    var manu3=document.getElementById('nsx');
+                        manu3.innerHTML=`
+                        <option>Samsung Tab</option>
+                        <option>Samsung Galaxy</option>
+                        <option>Samsung Note</option>
+                        `
+                        manu3.disabled = false
+                break;
+            }
+        }
+        var a=document.getElementById('abc').value;
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+            Input product's detail information
+        </div>
+        <ul>
+            <li>
+                <div style="font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Product Name</div>
+                <input type="text" style="width: 706px;height: 22px;background-color:#f7f69e;border: 1px solid grey;">
+            </li>
+            <li>
+                <div style="font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Category Name</div>
+                <select type="text" style="width: 712px;height: 29px;border: 1px solid grey;" id="nsx" disabled>
+                </select>
+            </li>
+            <li>
+                <div style="font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Price</div>
+                <input type="text" style="width: 706px;height: 22px;border: 1px solid grey;" id="abc">
+            </li>
+            <li>
+                <div style="font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Quantity</div>
+                <input type="text" style="width: 706px;height: 22px;border: 1px solid grey;" id="xyz">
+            </li>
+            <li>
+                <div style="font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Total Price</div>
+                <input type="text" style="width: 706px;height: 22px;border: 1px solid grey;background-color: rgb(241, 232, 232);" id="sum" disabled>
+            </li>
+            <li>
+                <div style="font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Manufacturer Name</div>
+                <select type="text" onchange="changeManufacturer()" style="width: 712px;height: 29px;border: 1px solid grey;" id="select1">
+                    <option>--Select--</option>
+                    <option value="apple">Apple</option>
+                    <option value="vsmart">Vsmart</option>
+                    <option value="samsung">Samsung</option>
+                </select>
+            </li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

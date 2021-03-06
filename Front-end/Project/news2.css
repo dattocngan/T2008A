@@ -1,0 +1,60 @@
+.term{
+	color: white;
+}
+.term1{
+	background-color: #f5882a;
+	margin-right: 13px;
+}
+.single-title{
+	font-size: 30px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+.share-all{
+	margin-top: 10px;
+}
+.share{
+	border-radius: 15px;
+	border: solid #c4b3a7 1px;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+.share-1 img{
+	width: 40px;
+	border: solid white 1px;
+	border-radius: 25px;
+	margin-right: 20px;
+}
+.shares{
+	border-radius: 15px;
+	border: solid #c4b3a7 1px;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	margin-top: 0 auto;
+	float: right;
+}
+.text-news{
+	margin-top: 20px;
+	font-size: 25px;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+.line{
+	font-size: 18px;
+}
+.cmt{
+	margin-top: 50px;
+	width: 400px;
+	height: 70px;
+	text-align: center;
+	background-color: #f5f5f5;
+	border: solid #f5eeed 1px;
+	border-radius: 7px;
+}

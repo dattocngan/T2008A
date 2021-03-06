@@ -1,0 +1,64 @@
+.top{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color:  rgb(64, 160, 224);
+    color: white;
+}
+.dienlinhtinh{
+    width: 400px;
+    height: 45px;
+    margin-left: 20px;
+    margin-top: 17px;
+}
+.topsupport a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.topsupport{
+    margin-left: 260px;
+    margin-top: 31px;
+    display: flex;
+}
+select#kho{
+    height: 32px;
+    margin-left: 18px;
+    margin-top: -5px;
+}
+.personalaccount{
+    width: auto;
+    height: 100%;
+    border-left: 3px solid rgb(100, 206, 135);
+    margin-left: 10px;
+    display: flex;
+}
+.rounded-circle{
+    width: 64px;
+    margin-left: 15px;
+    height: 64px;
+    margin-top: 7px;
+}
+.top2{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid grey;
+    display: flex;
+}
+#tatca{
+    width: 500px;
+    height: 50px;
+    border-radius: 3px;
+    color: grey;
+    margin-top: 16px;
+    margin-left: 372px;
+}
+.main{
+    display: flex;
+}
+.thanhtoan{
+    width: 40%;
+}
+.sanpham{
+    width: 60%;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tính toán</title>
+</head>
+<body style="font-size: 20px;">
+	<script>
+		function tong(a,b) {
+			return a+b
+		}
+		function hieu(a,b) {
+			return a-b
+		}
+		function tich(a,b) {
+			return a*b
+		}
+		function thuong(a,b) {
+			return a/b
+		}
+		alert('Bài toán tính toán')
+		a=prompt('Nhập a:')
+		b=prompt('Nhập b:')
+		a=eval(a)
+		b=eval(b)
+		document.write('Tổng của a và b là: ' +tong(a,b) + '<br>')
+		document.write('Hiệu của a và b là: ' +hieu(a,b) + '<br>')
+		document.write('Tích của a và b là: ' +tich(a,b) + '<br>')
+		if(b !=0){
+			document.write('Thương của a và b là: ' +thuong(a,b))
+		}
+		else{
+			alert('Không làm được phép chia!!')
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+.tieude{
+	font-family: Quicksand,sans-serif;
+	text-transform: uppercase;
+	font-size: 15px;
+	color: white;
+	border-style: box;
+	padding: 12px;
+	background-color: #3f80b5;
+	margin:-8px;
+}
+b.to{
+	font-family:Quicksand, sans-serif;
+	font-size: 30px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+span.muc{
+	margin-left: 3%;
+	font-size: medium;
+}
+.khoi{
+	position: absolute;
+}
+*{
+	font-family: Quicksand,sans-serif;
+}
+.tieude1{
+	color: white;
+	border-style: box;
+	padding-top: 3%;
+	background-color: #034b9e;
+	height: 180px;
+	text-align: center;
+}
+#shop:hover{
+	text-decoration: underline;
+}
+hr.dodac{
+	margin-right: 30px;
+}
+p.vua{
+	font-size: medium;
+}
+li{
+	color: black;
+}
+.li{
+	color: grey;
+}

@@ -1,0 +1,49 @@
+body{
+    background-image:url("https://a.ipricegroup.com/trends-article/10-mon-qua-cho-ban-gai-y-nghia-nhat-ngay-valentine.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.container{
+    margin-top: 5%;
+    background-color: rgb(228, 146, 116);
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.header{
+    text-align: center;
+    font-family: cursive;
+    color: red;
+}
+.main{
+    font-size: 25px;
+    color: rgb(240, 222, 225);
+}
+.box1, .box2, .box3, .box4{
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 50px;
+    width: 650px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+.box1:hover{
+    cursor: pointer;
+    background-color: rgba(72, 143, 1, 0.692);
+    border: rgba(72, 143, 1, 0.692);
+}
+.box2:hover{
+    cursor: pointer;
+    background-color: rgba(72, 143, 1, 0.692);
+    border: rgba(72, 143, 1, 0.692);
+}
+.box3:hover{
+    cursor: pointer;
+    background-color: rgba(72, 143, 1, 0.692);
+    border: rgba(72, 143, 1, 0.692);
+}
+.box4:hover{
+    cursor: pointer;
+    background-color: rgba(72, 143, 1, 0.692);
+    border: rgba(72, 143, 1, 0.692);
+}

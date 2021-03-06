@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Quản lí thông tin sinh viên</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <style>
+        li:hover{
+            background-color: black;
+        }
+        li.select{
+            margin-left: 24px;
+        }
+        /* th,td{
+            border: 1px solid rgb(187, 186, 186);
+        } */
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark" style="padding-bottom: 0;height: 74px;">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" style="color: grey; font-size: x-large;" href="#">GokiSoft</a>
+          </li>
+          <li class="select" class="nav-item">
+            <a class="nav-link" style="color: grey;margin-top: 7px;" href="#">Trang chu</a>
+          </li>
+          <li class="select" class="nav-item">
+            <a class="nav-link" style="color: grey;margin-top: 7px;"  href="#">DS Khoa Hoc</a>
+          </li>
+          <li class="select" class="nav-item">
+            <a class="nav-link" style="color: grey;margin-top: 7px;"  href="#">Goc Lap Trinh</a>
+          </li>
+          <li class="select" class="nav-item" style="margin-left: 740px;">
+            <a class="nav-link" style="color: grey;margin-top: 7px;"  href="#"><svg style="margin-top: -3px;" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>Dang ki</a>
+          </li>
+          <li class="select" class="nav-item">
+            <a class="nav-link" style="color: grey;margin-top: 7px;"  href="#"><svg style="margin-right:3px;margin-top:-2px;" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+              </svg>Dang nhap</a>
+          </li>
+        </ul>
+      </nav>
+    <div class="container" style="border: 2px solid rgb(85, 118, 190);margin-top: 10px;border-radius: 5px;">
+        <div style="background-color: rgb(85, 118, 190); margin-left: -16px; margin-right: -16px;margin-top: -0.8px; height: 52px; text-indent: 30px; padding-top: 9px; color: white; font-size: 20px;">Quan li thong tin sinh vien</div>
+        <table style="margin-top: 20px;" class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Fullname</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Nguyen Tien Dat</td>
+                    <td>18</td>
+                    <td>dattocngan@gmail.com</td>
+                    <td>0967962184</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Nguyen Tien Dat</td>
+                    <td>18</td>
+                    <td>dattocngan@gmail.com</td>
+                    <td>0967962184</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Nguyen Tien Dat</td>
+                    <td>18</td>
+                    <td>dattocngan@gmail.com</td>
+                    <td>0967962184</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Nguyen Tien Dat</td>
+                    <td>18</td>
+                    <td>dattocngan@gmail.com</td>
+                    <td>0967962184</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Nguyen Tien Dat</td>
+                    <td>18</td>
+                    <td>dattocngan@gmail.com</td>
+                    <td>0967962184</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Nguyen Tien Dat</td>
+                    <td>18</td>
+                    <td>dattocngan@gmail.com</td>
+                    <td>0967962184</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Nguyen Tien Dat</td>
+                    <td>18</td>
+                    <td>dattocngan@gmail.com</td>
+                    <td>0967962184</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Nguyen Tien Dat</td>
+                    <td>18</td>
+                    <td>dattocngan@gmail.com</td>
+                    <td>0967962184</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="border: 2px solid rgb(85, 118, 190) ;background-color:  rgb(85, 118, 190);text-align: center;color: white;border-radius: 5px;margin-top: 10px;" class="container">
+        100%
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+  </body>
+</html>
+<!-- Dùng CARD -->

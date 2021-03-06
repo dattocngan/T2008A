@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải phương trình bậc 1</title>
+    <style>
+        .main{
+            border: 1px solid #4970a3;
+            border-radius: 5px;
+            width: 500px;
+            height: 80px;
+            display: block;
+        }
+        .top{
+            background-color: #4970a3;
+            width: 99.1%;
+            height: 30px;
+            padding-left: 5px;
+            padding-top: 5px;
+            color: white;
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+        li{
+            border: 1px solid #7ab369;
+            background-color: #7ab369;
+            border-radius: 5px;
+            padding: 5px;
+            margin-right: 10px;
+            margin-top: -7px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+            Giải phương trình bậc 1
+        </div>
+        <div>
+            <ul>
+                <li onclick="putA()">Nhập giá trị A</li>
+                <li onclick="putB()">Nhập giá trị B</li>
+                <li onclick="result()">In kết quả</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var count=0
+        function putA() {
+            a=prompt('Nhập A:')
+            count++
+        }
+        function putB() {
+            b=prompt('Nhập B:')
+            count++
+        }
+        function result() {
+            if(count!=2){
+                alert('Nhập đầy đủ giá trị!!')
+                return
+            }
+            count = 0
+            a=parseInt(a);
+            b=parseInt(b);
+            r=a+b;
+            alert('Tổng của A và B là '+r)
+        }
+    </script>
+</body>
+</html>

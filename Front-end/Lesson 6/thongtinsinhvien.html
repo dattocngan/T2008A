@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thông tin sinh viên</title>
+	<style type="text/css">
+		th,td{
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<table border="1px solid black" cellspacing="0" style="width: 559px; height: 177px; text-align: center; margin: 0 auto;">
+		<script>
+			var studentList = []
+			n=prompt('Nhập số sinh viên cần điền:')
+			n=eval(n)
+			for(i=0;i<n;i++){
+				alert('Nhập thông tin sinh viên thứ '+(i+1))
+				std = {
+					fullname: '',
+					age: 0,
+					address: '',
+					email: '',
+					number: ''
+				}
+				std.fullname= prompt('Nhập tên:')
+				std.age= prompt('Nhập tuổi:')
+				std.address= prompt('Nhập địa chỉ:')
+				std.email= prompt('Nhập email:')
+				std.number= prompt('Nhập số điện thoại:')
+
+				studentList.push(std)
+			}
+			document.write('<tr>')
+			document.write('<th>'+ 'STT' + '</th>')
+	        document.write('<th>'+ 'Tên' + '</th>')
+	        document.write('<th>'+ 'Tuổi' + '</th>')
+	        document.write('<th>'+ 'Địa chỉ' + '</th>')
+	        document.write('<th>'+ 'Email' + '</th>')
+	        document.write('<th>'+ 'Số điện thoại' + '</th>')
+	        document.write('</tr>')
+	        for(i=0;i<n;i++){
+	        	document.write('<tr>')
+	        	document.write('<td>' + (i+1) + '</td>')
+				document.write('<td>'+ studentList[i].fullname + '</td>')
+		        document.write('<td>'+ studentList[i].age + '</td>')
+		        document.write('<td>'+ studentList[i].address + '</td>')
+		        document.write('<td>'+ studentList[i].email + '</td>')
+		        document.write('<td>'+ studentList[i].number + '</td>')
+		        document.write('</tr>')
+	        }
+	        document.write('</table>')
+		</script>
+	</table>
+</body>
+</html>

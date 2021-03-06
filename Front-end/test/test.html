@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phan mem quan ly ban hang</title>
+	<meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-primary">
+		<form class="form-inline">
+			<input class="form-control mr-sm-2" type="text" placeholder="Nhập mã code hoặc tên hàng hóa" style="width: 400px">
+		</form>
+			<ul class="navbar-nav" style="padding-left: 250px;">
+				<li class="nav-item">
+					<a href="#" class="nav-link" style="color: white">Báo Cáo</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link" style="color: white">Quản Lý</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link" style="color: white">Nhập gì đấy</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link" style="color: white; margin-left: 200px">Cửa hàng</a>
+				</li>
+			</ul>
+			<select style="height: 40px;">
+				<option>kho 1</option>
+				<option>kho 2</option>
+				<option>kho 3</option>
+				<option>kho 4</option>
+			</select>
+	</nav>
+	<div class="container">	
+		<div class="row">
+			<div class="col-md-5">
+				<table class="table table-hover table-bordered" style="float: left; margin-top: 20px;">
+					<thead>
+						<tr>
+							<td>Hàng hóa</td>
+							<td>SL</td>
+							<td>Đơn giá</td>
+							<td>Thành tiền</td>
+						</tr>
+					</thead>
+					<tbody id="cardLish">
+					</tbody>
+				</table>
+			</div>
+			<div class="col-md-7">
+				<div class="row" id="product_items">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		var dataLish = [
+			{
+				'thumbnail': 'https://bizweb.dktcdn.net/thumb/1024x1024/100/325/688/products/mi-hao-hao-tom-chua-cay-75g.jpg?v=1542274171467',
+				'titel': 'Hao Hao',
+				'price': '3.500 VND'
+			}, {
+				'thumbnail': 'https://cdn.tgdd.vn/Products/Images/2565/77665/bhx/mi-kokomi-tom-chua-cay-goi-65g-201912101048059837.jpg',
+				'titel': 'Kokomi',
+				'price': '3.500 VND'
+			}, {
+				'thumbnail': 'https://cdn.tgdd.vn/Products/Images/2565/77658/bhx/mi-gau-do-tom-chua-cay-goi-63g-202001091134459464.jpg',
+				'titel': 'Gau do',
+				'price': '3.500 VND'
+			}
+			, {
+				'thumbnail': 'https://cdn.tgdd.vn/Products/Images/2565/77650/bhx/mi-khoai-tay-cung-dinh-cua-be-rau-ram-goi-80g-201912081034266973.JPG',
+				'titel': 'Cung dinh',
+				'price': '3.500 VND'
+			}
+			, {
+				'thumbnail': 'https://lh3.googleusercontent.com/proxy/pjgfJJC84NkM3UP7WorHDuX3KQqiXSQPfTUSU-G3YrOKoydUcmixf5t4SuUwGxpoPx2BKBCFoTsNtVtR8G2lKec5ezMkA7SmGQ8gmdGl',
+				'titel': 'Bim Bim oishi',
+				'price': '5.000 VND'
+			}
+			, {
+				'thumbnail': 'https://lh3.googleusercontent.com/proxy/UK-nqqATC0KWP0D9trxyVW3hDSl8RqhOwTwRsJpioSItOCA5te7gw37qa8zhKpEHVcmYGH3lOQj9TwEwKezHK1kO3UlqTSIgndkyspPg',
+				'titel': 'Bim Bim oishi',
+				'price': '5.000 VND'
+			}
+			, {
+				'thumbnail': 'https://cf.shopee.vn/file/51b0f28104e4c45e4d96f8b0bad73945',
+				'titel': 'Bim Bim oishi',
+				'price': '5.000 VND'
+			}
+			, {
+				'thumbnail': 'https://vn-test-11.slatic.net/p/e434a18235e392ea8d24405995e579b0.jpg_720x720q80.jpg_.webp',
+				'titel': 'Bim Bim oishi',
+				'price': '5.000 VND'
+			}
+		]
+
+		cardItems = []
+
+		$(function() {
+			loadData()
+		})
+
+		function loadData() {
+			for (var i = 0; i < dataLish.length; i++) {
+			 	$('#product_items').append(`<div class="col-md-3" onclick="clickItem(${i})" style="cursor: pointer;">
+						<img src="${dataLish[i].thumbnail}" style="width: 100%">
+						<p style="text-align: center;">${dataLish[i].titel}</p>
+						<p style="text-align: center;">${dataLish[i].price}</p>
+					</div>`)
+			}
+		}
+
+		function clickItem(index) {
+			if (cardItems[index] === undefined) {
+				cardItems[index] = {
+					'thumbnail': dataLish[index].thumbnail,
+					'titel': dataLish[index].titel,
+					'price': dataLish[index].price,
+					'number': 1
+				}
+			} else {
+				cardItems[index].number++
+			}
+			console.log(cardItems)
+			$('#cardLish').empty()
+			for (var i = 0; i < cardItems.length; i++) {
+				p = cardItems[i]
+				if (p === undefined) continue;
+				$('#cardLish').append(`<tr>
+							<td>${p.titel}</td>
+							<td>${p.number}</td>
+							<td>${p.price}</td>
+							<td>${p.price * p.number}</td>
+						</tr>`)
+			}
+		}
+
+	</script>
+</body>
+</html>

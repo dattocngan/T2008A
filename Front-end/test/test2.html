@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+</head>
+<body>
+	<table border="1">
+	<script type="text/javascript">
+	var studentList=[]
+	n = prompt("Nhap so sinh vien n:")
+	n = eval(n)
+	var information = {
+		name: "",
+		age: '',
+		address: "",
+		email: "",
+	}
+	for(i=0;i<n;i++){
+		alert("Nhap thong tin sinh vien thu" + (i+1));
+		information.name= prompt("nhap ten:")
+		information.age= prompt("nhap tuoi:")
+		information.address= prompt("nhap diachi:")
+		information.email= prompt("nhap email:")
+		studentList.push(information)
+		console.log(studentList[i])
+	}
+
+	document.write("<tr>")
+	document.write("<td>" + "STT" + "</td>")
+	document.write("<th>" + "Ten" + "</th>")
+	document.write("<th>" + "Tuoi" + "</th>")
+	document.write("<th>" + "Dia chi" + "</th>")
+	document.write("<th>" + "Email" + "</th>")
+	document.write("</tr>")
+	for (i=0;i<n;i++) {
+		document.write("<tr>")
+		document.write("<th>" + (i+1) + "</th>")
+		document.write("<th>" + studentList[i].name + "</th>")
+		document.write("<th>" + studentList[i].age + "</th>")
+		document.write("<th>" + studentList[i].address + "</th>")
+		document.write("<th>" + studentList[i].email + "</th>")
+		document.write("</tr>")
+	}
+	</script>
+	</table>
+</body>
+</html>

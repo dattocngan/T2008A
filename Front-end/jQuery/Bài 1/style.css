@@ -1,0 +1,10 @@
+.card-header{
+    background-color: rgb(64, 160, 224) !important;
+    color: white;
+}
+.card-body{
+    display: flex;
+}
+a{
+    margin-right: 8px;
+}

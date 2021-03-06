@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ShopBRVN - Thanh toán đơn hàng</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-image: url(https://image-cdn.essentiallysports.com/wp-content/uploads/20200316105852/Stephen-Curry-GSW-1600x1066.jpg);background-repeat: no-repeat;background-size: cover;">
+	<h1><a href="trangchu.html" style="text-decoration: none; color: blue;">ShopBRVN</a></h1>
+	<h1><span style="color: red">Thanh toán đơn hàng</span></h1>
+	<p style="color: #D8CFAC;">Thông tin giao hàng</p>
+	<form action="thanhcong.html">
+		<div>
+			<input type="text" required="" placeholder="Họ và tên" style="width: 636px; height: 33px;">
+		</div>
+		<br>
+		<div style="display: inline-block;">
+			<input type="email" placeholder="Email" style="width: 400px;height: 33px;">
+			<input type="telno" placeholder="Số điện thoại" required="" style="width: 223.15px;height: 33px;">
+		</div>
+		<br><br>
+		<div>
+			<input type="text" required placeholder="Địa chỉ" style="width: 636px; height: 33px;">
+		</div>
+		<br>
+		<div style="display: inline-block;">
+		<select onchange="Select()" name="" id="select" style="width: 300px; height: 42px;" required>
+			<option value="">Tỉnh thành</option>
+			<option value="hanoi">Hà Nội</option>
+			<option value="hcm">Hồ Chí Minh</option>
+		</select>
+		<select name="" id="result" style="width: 339.15px; height: 42px;" disabled required>
+			<option value="">Quận / Huyện</option>
+		</select>
+		</div>
+		<br><br>
+		<button style="background-color: #74ADD1;width: 339px;height: 54px;margin-left: 305px;cursor: pointer;font-size: 20px;color: white;">Xác nhận</button>
+	</form>
+	<script>
+		function Select() {
+			var cityTag=document.getElementById('select')
+			var city=cityTag.value
+			switch(city){
+				case '':
+					document.getElementById('result').value=''
+					document.getElementById('result').disabled=true
+				break;	
+				case 'hanoi':
+					document.getElementById('result').innerHTML=`
+					<option value="">Quận / Huyện</option>
+					<option value="">Hà Đông</option>
+					<option value="">Thanh Xuân</option>
+					<option value="">Cầu Giấy</option>
+					<option value="">Đống Đa</option>
+					<option value="">Ba Đình</option>
+					<option value="">Quốc Oai</option>
+					<option value="">Mai Dịch</option>
+					`
+					document.getElementById('result').disabled=false
+				break;	
+				case 'hcm':
+				document.getElementById('result').innerHTML=`
+					<option value="">Quận / Huyện</option>
+					<option value="">Quận 1</option>
+					<option value="">Quận 2</option>
+					<option value="">Quận 3</option>
+					<option value="">Quận 4</option>
+					<option value="">Quận 5</option>
+					<option value="">Quận 6</option>
+					<option value="">Quận 7</option>
+					<option value="">Quận 8</option>
+					<option value="">Quận 9</option>
+					<option value="">Quận 10</option>
+					`
+					document.getElementById('result').disabled=false
+				break;	
+			}
+		}
+	</script>
+</body>
+</html>

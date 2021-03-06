@@ -1,0 +1,50 @@
+body{
+    background-color: lightgrey !important;
+}
+.navbar{
+    height: 100px;
+    background-color: rgb(125, 20, 185);
+}
+.navbar-brand{
+    font-size: 50px !important;
+}
+.nav-item{
+    font-size: 18px !important;
+    text-transform: uppercase !important;
+    margin-right: 5%;
+}
+.nav-link{
+    color: white !important;
+}
+.nav-link:hover{
+    color: rgb(194, 190, 190) !important;
+}
+.container-fluid{
+    background-color: rgb(152, 74, 197) !important;
+    height: 500px;
+    text-align: center;
+}
+.biz4intro{
+    color: white;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.lorem{
+    width: 47%;
+    color: white;
+    margin-left: 26.6%;
+    margin-top: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.butt{
+    background-color:rgb(152, 74, 197);
+    color: white;
+    border: 1px solid white;
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none !important;
+}
+.butt:hover{
+    background-color: rgb(125, 20, 185);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript tutorial</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Welcome to learn Javascript</h1>
+
+	<script type="text/javascript">
+		// function tiendat(x1,x2) {
+		// 	document.write('Gia tri can in la: ' + x1 + '\xa0\xa0\xa0' +x2)
+		// }
+		// tiendat(5,7)
+		// var dat=['dat','dep','trai']
+		// for(i=0;i<dat.length;i++){
+		// 	document.write(dat[i]+'\xa0')
+		// }
+		// document.write('<br>')
+		
+		// var mycars=["Saab","Vovlo",'BMW']
+		// for(a in mycars){
+		// 	document.write(mycars[a] + '\xa0')
+		// }
+		// document.write('<br>')
+		// array=dat.join()
+		// document.write(array)
+		// document.write('<br>')
+		// var myarray=[13,36,25,52,83]
+		// myarray.splice(2,3,42,15)
+		// document.write(myarray)
+		// document.write('<br>')
+		// str='ngay hom nay that dep'
+		// array=str.split(' ')
+		// for(i=0;i<array.length;i++){
+		// 	document.write(array[i] + '\xa0')
+		// }
+		//Cách sử dụng every
+		// function isBelowThreshold(value){
+		// 	return value<40
+		// }//Cách 1
+		var isBelowThreshold = (currentValue) => currentValue < 40//Cách 2
+		var array1 = [1, 30, 39, 29, 10, 13];
+
+		document.write(array1.every(isBelowThreshold));
+		// expected output: true
+		</script>
+	
+</body>
+</html>

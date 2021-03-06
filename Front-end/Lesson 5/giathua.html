@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tính giai thừa</title>
+</head>
+<body>
+	<script>
+		n=prompt('Nhập N:');
+		if (n<0) {
+			alert('Nhập sai!!');
+		}
+		else if (n==0) {
+			document.write('Bài toán tính giai thừa 1 số N'+ '<br><br>')
+			document.write('Kết quả = 1')
+		}
+		else{
+			var tich=1
+			for(i=1;i<=n;i++){
+				tich*=i;
+			}
+			document.write('Bài toán tính giai thừa 1 số N'+ '<br><br>')
+			document.write('Kết quả = ' + tich)
+		}
+	</script>
+</body>
+</html>

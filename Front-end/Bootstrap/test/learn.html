@@ -1,0 +1,1847 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>GokiSoft - Học Lập Trình Từ A - Z (HTML/CSS/JS - Bootstrap/JQuery - AngularJS - PHP/Laravel - Java v.v)</title>
+<meta name="description" content="Học Lập Trình Từ A - Z (HTML/CSS/JS - Bootstrap/JQuery - AngularJS - PHP/Laravel - Java v.v)">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+
+<meta property="og:url" content="http://gokisoft.com/" />
+<meta property="article:author" content="http://gokisoft.com/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Học Lập Trình Từ A - Z (HTML/CSS/JS - Bootstrap/JQuery - AngularJS - PHP/Laravel - Java v.v)" />
+<meta property="og:description" content="Học Lập Trình Từ A - Z (HTML/CSS/JS - Bootstrap/JQuery - AngularJS - PHP/Laravel - Java v.v)" />
+<meta property="og:image" content="https://res.cloudinary.com/ziczacgroup/image/upload/v1600320406/tufegz0akqdcgj7e765r.png" />
+<meta property="og:locale" content="vi_VN" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Học Lập Trình Từ A - Z (HTML/CSS/JS - Bootstrap/JQuery - AngularJS - PHP/Laravel - Java v.v)" />
+<meta name="twitter:image:src" content="https://res.cloudinary.com/ziczacgroup/image/upload/v1600320406/tufegz0akqdcgj7e765r.png" />
+<meta name="twitter:description" content="Học Lập Trình Từ A - Z (HTML/CSS/JS - Bootstrap/JQuery - AngularJS - PHP/Laravel - Java v.v)" />
+<meta name="google-site-verification" content="owoQMlqWmrnzN1_p5GvjIDrNvxyWE72ujK-WaN4wCUY" />
+
+
+<link rel="icon" type="image/png" href="https://res.cloudinary.com/gokisoft-com/image/upload/v1553571154/ico_copy_uhtlfa.png" />
+
+<link rel="stylesheet" type="text/css" href="https://gokisoft.com/themes/gokisoft/vendor/bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://gokisoft.com/themes/gokisoft/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://gokisoft.com/themes/gokisoft/fonts/fontawesome-5.0.8/css/fontawesome-all.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://gokisoft.com/themes/gokisoft/fonts/iconic/css/material-design-iconic-font.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://gokisoft.com/themes/gokisoft/vendor/animate/animate.css">
+
+<link rel="stylesheet" type="text/css" href="https://gokisoft.com/themes/gokisoft/vendor/css-hamburgers/hamburgers.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://gokisoft.com/themes/gokisoft/vendor/animsition/css/animsition.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://gokisoft.com/themes/gokisoft/css/util.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://gokisoft.com/themes/gokisoft/css/main.css">
+
+<link href="https://gokisoft.com/themes/gokisoft-old/lib/rainbow/themes/css/monokai.css" rel="stylesheet" type="text/css" media="screen">
+
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=LX0CEZPDZe3Zar4Hq9loBxGrsO0U3mjxvWTmxfYHYFoENFfwyKS-iqYRHWsAwtqx" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9nb2tpc29mdC5jb20v"/><style type="text/css">
+    #description img {
+        width: 100% !important;
+        cursor: pointer;
+    }
+
+    .float{
+      position:fixed;
+      width:50px;
+      height:50px;
+      bottom:20px;
+      right:20px;
+      background-color:#0C9;
+      color:#FFF;
+      border-radius:50px;
+      text-align:center;
+      box-shadow: 2px 2px 3px #999;
+    }
+
+    .my-float{
+      margin-top:17px;
+    }
+</style>
+<style type="text/css">
+.user-image {
+    float: left;
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -2px
+}
+  /* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    /*min-width: 250px;*/ /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #979899; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes  fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes  fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+pre {
+    margin-top: 5px !important;
+}
+</style>
+</head>
+<body>
+
+
+<header>
+
+<div class="container-menu-desktop">
+<div class="topbar">
+<div class="content-topbar container h-100">
+<div class="left-topbar">
+<a href="https://gokisoft.com/admin/information" target="__blank"><img src="https://www.gravatar.com/avatar/b5819cd0adc95c727c7ad0c2bcf6098b.jpg?s=80&amp;d=mm&amp;r=g" class="user-image" alt="User Image" /></a>
+<a href="https://gokisoft.com/editor" class="left-topbar-item" target="_blank">
+Ghi Chú
+</a>
+<a href="https://web.gokisoft.com" class="left-topbar-item" target="_blank">
+Thiết Kế Web
+</a>
+<a href="https://gokisoft.com/cv/dattcool" class="left-topbar-item" style="color: yellow; font-weight: bold;" target="_blank">
+My CV
+</a>
+<a href="https://gokisoft.com/myclass" class="left-topbar-item">My Class</a>
+<a href="https://gokisoft.com/lien-he" class="left-topbar-item">
+Liên Hệ
+</a>
+<a href="https://gokisoft.com/members" class="left-topbar-item">
+Học Viên Tích Cực
+</a>
+<a href="https://gokisoft.com/ung-ho--tai-tro-de-gokisoft-co-the-ra-that-nhieu-khoa-hoc--chia-se-nhieu-kien-thuc-hon-nua-vi-cong-dong.html" class="left-topbar-item" style="color: #36f506; display: none;">
+Ủng Hộ
+</a>
+<a href="https://gokisoft.com/logout" class="left-topbar-item" onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+Thoát
+</a>
+<form id="logout-form" action="https://gokisoft.com/logout" method="POST" style="display: none;">
+<input type="hidden" name="_token" value="RqRV6fDpRMfhGoBw13XwKPL3F9tsUbVxraSqkWRr">
+<input type="submit" value="logout" style="display: none;">
+</form>
+</div>
+<div class="right-topbar">
+<a href="https://www.facebook.com/groups/devAZ/" target="_blank">
+<span class="fab fa-facebook-f"></span>
+</a>
+<a href="#">
+<span class="fab fa-twitter"></span>
+</a>
+<a href="#">
+<span class="fab fa-pinterest-p"></span>
+</a>
+<a href="#">
+<span class="fab fa-vimeo-v"></span>
+</a>
+<a href="https://www.youtube.com/channel/UCd8aIzwdaoQ_Abp3frmeZSA?sub_confirmation=1" target="_blank">
+<img src="https://image.flaticon.com/icons/svg/1384/1384060.svg" style="max-height: 35px">
+</a>
+</div>
+</div>
+</div>
+
+<div class="wrap-header-mobile">
+
+<div class="logo-mobile">
+<a href="https://gokisoft.com"><img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1587623413/qhwncq3wtjkrsyke6ayw.png" alt="IMG-LOGO"></a>
+</div>
+
+<div class="btn-show-menu-mobile hamburger hamburger--squeeze m-r--8">
+<span class="hamburger-box">
+<span class="hamburger-inner"></span>
+</span>
+</div>
+</div>
+
+<div class="menu-mobile">
+<ul class="topbar-mobile">
+<li class="left-topbar">
+<a href="https://gokisoft.com" class="left-topbar-item">
+Học Lập Trình Từ A - Z (HTML/CSS/JS - Bootstrap/JQuery - AngularJS - PHP/Laravel - Java v.v)
+</a>
+</li>
+<li class="right-topbar">
+<a href="https://learning.gokisoft.com/admin" class="left-topbar-item">
+Đăng Nhập
+</a>
+<a href="#">
+<span class="fab fa-facebook-f"></span>
+</a>
+<a href="#">
+<span class="fab fa-twitter"></span>
+</a>
+<a href="#">
+<span class="fab fa-pinterest-p"></span>
+</a>
+<a href="#">
+<span class="fab fa-vimeo-v"></span>
+</a>
+<a href="#">
+<span class="fab fa-youtube"></span>
+</a>
+</li>
+</ul>
+<ul class="main-menu-m">
+<li>
+<a href="https://gokisoft.com">Trang Chủ</a>
+</li>
+<li>
+<a href="https://gokisoft.com/lap-trinh-c.htm">Lập Trình C</a>
+</li>
+<li>
+<a href="#frontend">Frontend</a>
+<ul class="sub-menu-m">
+<li><a href="https://gokisoft.com/hoc-html5-css3.htm">Học HTML5 - CSS3</a></li>
+<li><a href="https://gokisoft.com/hoc-bootstrap.htm">Học Bootstrap</a></li>
+<li><a href="https://gokisoft.com/hoc-js.htm">Học JS</a></li>
+<li><a href="https://gokisoft.com/hoc-jquery.htm">Học JQuery</a></li>
+</ul>
+<span class="arrow-main-menu-m">
+<i class="fa fa-angle-right" aria-hidden="true"></i>
+</span>
+</li>
+<li>
+<a href="#backend">Backend</a>
+<ul class="sub-menu-m">
+<li><a href="https://gokisoft.com/hoc-php.htm">Học PHP</a></li>
+<li><a href="https://gokisoft.com/hoc-laravel.htm">Học Laravel</a></li>
+</ul>
+<span class="arrow-main-menu-m">
+<i class="fa fa-angle-right" aria-hidden="true"></i>
+</span>
+</li>
+<li>
+<a href="#java">Java</a>
+<ul class="sub-menu-m">
+<li><a href="https://gokisoft.com/java-basic.htm">Java Basic</a></li>
+<li><a href="https://gokisoft.com/java-advanced.htm">Java Advanced</a></li>
+<li><a href="https://gokisoft.com/java-web-ejb-ead.htm">Java Web + EJB (EAD)</a></li>
+<li><a href="https://gokisoft.com/java-web-webservice.htm">Java Web + WebService</a></li>
+<li><a href="https://gokisoft.com/java-web-ea.htm">Java Web + EA</a></li>
+<li><a href="https://gokisoft.com/web-component-development-servjsp.htm">Web Component Development (SERVJSP)</a></li>
+<li><a href="https://gokisoft.com/spring-mvc.htm">Spring MVC</a></li>
+</ul>
+<span class="arrow-main-menu-m">
+<i class="fa fa-angle-right" aria-hidden="true"></i>
+</span>
+</li>
+<li>
+<a href="https://gokisoft.com/android.htm">Android</a>
+</li>
+<li>
+<a href="#tools">Tools</a>
+<ul class="sub-menu-m">
+<li><a href="https://gokisoft.com/git-github.htm">Git/Github</a></li>
+</ul>
+<span class="arrow-main-menu-m">
+<i class="fa fa-angle-right" aria-hidden="true"></i>
+</span>
+</li>
+<li>
+<a href="#khac">Khác</a>
+<ul class="sub-menu-m">
+<li><a href="https://gokisoft.com/projects.htm">Projects</a></li>
+<li><a href="https://gokisoft.com/chia-se-cntt.htm">Chia Sẻ CNTT</a></li>
+<li><a href="https://gokisoft.com/c-sharp.htm">C Sharp</a></li>
+<li><a href="https://gokisoft.com/sql.htm">SQL</a></li>
+<li><a href="https://gokisoft.com/tai-lieu-hoc.htm">Tài Liệu Học</a></li>
+</ul>
+<span class="arrow-main-menu-m">
+<i class="fa fa-angle-right" aria-hidden="true"></i>
+</span>
+</li>
+</ul>
+</div>
+
+<div class="wrap-logo container">
+
+<div class="logo">
+<a href="https://gokisoft.com"><img style="height: 65px !important;" src="https://res.cloudinary.com/ziczacgroup/image/upload/v1587623413/qhwncq3wtjkrsyke6ayw.png" alt="LOGO"></a>
+</div>
+
+<div class="banner-header">
+<a href="https://www.facebook.com/groups/devAZ/" target="_blank"><img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1600320406/tufegz0akqdcgj7e765r.png" alt="Học Lập Trình Từ A - Z (HTML/CSS/JS - Bootstrap/JQuery - AngularJS - PHP/Laravel - Java v.v)"></a>
+</div>
+</div>
+
+<div class="wrap-main-nav">
+<div class="main-nav">
+
+<nav class="menu-desktop">
+<a class="logo-stick" href="https://gokisoft.com">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1587623413/qhwncq3wtjkrsyke6ayw.png" alt="LOGO">
+</a>
+<ul class="main-menu">
+<li>
+<a href="https://gokisoft.com">Trang Chủ</a>
+</li>
+<li class="main-menu">
+<a href="https://gokisoft.com/lap-trinh-c.htm">Lập Trình C</a>
+</li>
+<li>
+<a href="#frontend">Frontend</a>
+<ul class="sub-menu">
+<li><a href="https://gokisoft.com/hoc-html5-css3.htm">Học HTML5 - CSS3</a></li>
+<li><a href="https://gokisoft.com/hoc-bootstrap.htm">Học Bootstrap</a></li>
+<li><a href="https://gokisoft.com/hoc-js.htm">Học JS</a></li>
+<li><a href="https://gokisoft.com/hoc-jquery.htm">Học JQuery</a></li>
+</ul>
+</li>
+<li>
+<a href="#backend">Backend</a>
+<ul class="sub-menu">
+<li><a href="https://gokisoft.com/hoc-php.htm">Học PHP</a></li>
+<li><a href="https://gokisoft.com/hoc-laravel.htm">Học Laravel</a></li>
+</ul>
+</li>
+<li>
+<a href="#java">Java</a>
+<ul class="sub-menu">
+<li><a href="https://gokisoft.com/java-basic.htm">Java Basic</a></li>
+<li><a href="https://gokisoft.com/java-advanced.htm">Java Advanced</a></li>
+<li><a href="https://gokisoft.com/java-web-ejb-ead.htm">Java Web + EJB (EAD)</a></li>
+<li><a href="https://gokisoft.com/java-web-webservice.htm">Java Web + WebService</a></li>
+<li><a href="https://gokisoft.com/java-web-ea.htm">Java Web + EA</a></li>
+<li><a href="https://gokisoft.com/web-component-development-servjsp.htm">Web Component Development (SERVJSP)</a></li>
+<li><a href="https://gokisoft.com/spring-mvc.htm">Spring MVC</a></li>
+</ul>
+</li>
+<li class="main-menu">
+<a href="https://gokisoft.com/android.htm">Android</a>
+</li>
+<li>
+<a href="#tools">Tools</a>
+<ul class="sub-menu">
+<li><a href="https://gokisoft.com/git-github.htm">Git/Github</a></li>
+</ul>
+</li>
+<li>
+<a href="#khac">Khác</a>
+<ul class="sub-menu">
+<li><a href="https://gokisoft.com/projects.htm">Projects</a></li>
+<li><a href="https://gokisoft.com/chia-se-cntt.htm">Chia Sẻ CNTT</a></li>
+<li><a href="https://gokisoft.com/c-sharp.htm">C Sharp</a></li>
+<li><a href="https://gokisoft.com/sql.htm">SQL</a></li>
+<li><a href="https://gokisoft.com/tai-lieu-hoc.htm">Tài Liệu Học</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</header>
+
+<div class="container">
+<div class="bg0 flex-wr-sb-c p-rl-20 p-tb-8">
+<div class="f2-s-1 p-r-30 size-w-0 m-tb-6 flex-wr-s-c">
+<span class="text-uppercase cl2 p-r-8">
+Sự Kiên & Bài Viết Nổi Bật:
+</span>
+<span class="dis-inline-block cl6 slide100-txt pos-relative size-w-0" data-in="fadeInDown" data-out="fadeOutDown">
+<span class="dis-inline-block slide100-txt-item animated visible-false">
+<a href="https://gokisoft.com/huong-dan-phan-tich-du-an-phan-mem.html" title="Hướng dẫn phân tích dự án phần mềm">Hướng dẫn phân tích dự án phần mềm..</a>
+</span>
+<span class="dis-inline-block slide100-txt-item animated visible-false">
+<a href="https://gokisoft.com/bai-tap-quan-ly-sach--tac-gia-lap-trinh-jspservlet.html" title="Bài tập - Quản lý sách &amp; tác giả - Lập trình JSP/Servlet">Bài tập - Quản lý sách &amp; tác giả - Lập trình JSP/Servlet..</a>
+</span>
+<span class="dis-inline-block slide100-txt-item animated visible-false">
+<a href="https://gokisoft.com/javafree-lo-trinh-hoc-java-basic-toi-java-advanced.html" title="JavaFree- Lộ trình học Java Basic tới Java Advanced">JavaFree- Lộ trình học Java Basic tới Java Advanced..</a>
+</span>
+<span class="dis-inline-block slide100-txt-item animated visible-false">
+<a href="https://gokisoft.com/bai-tap-file-lap-trinh-c.html" title="Bài tập FILE - Lập trình C">Bài tập FILE - Lập trình C..</a>
+</span>
+</span>
+</div>
+<form method="GET" action="https://www.google.com.vn/search" target="_blank" onsubmit="jQuery('#q').val('site:gokisoft.com ' + jQuery('#s_tmp').val())">
+<div class="pos-relative size-a-2 bo-1-rad-22 of-hidden bocl11 m-tb-6">
+<input class="f1-s-1 cl6 plh9 s-full p-l-25 p-r-45" type="text" id="s_tmp" placeholder="Tìm kiếm">
+<input type="text" name="q" id="q" style="display: none;">
+<button type="submit" class="flex-c-c size-a-1 ab-t-r fs-20 cl2 hov-cl10 trans-03">
+<i class="zmdi zmdi-search"></i>
+</button>
+</div>
+</form></div>
+</div>
+
+<section class="bg0">
+<div class="container">
+<div class="row m-rl--1">
+<div class="col-md-6 p-rl-1 p-b-2">
+<div class="bg-img1 size-a-3 how1 pos-relative" style="background-image: url(https://res.cloudinary.com/ziczacgroup/image/upload/v1588148774/ye9pe7jfvctl59moaozv.jpg); background-size: contain; background-position: top;">
+<a href="https://gokisoft.com/huong-dan-phan-tich-du-an-phan-mem.html" class="dis-block how1-child1 trans-03" title="Học Lập Trình Từ A - Z (HTML/CSS/JS - Bootstrap/JQuery - AngularJS - PHP/Laravel - Java v.v)"></a>
+<div class="flex-col-e-s s-full p-rl-25 p-tb-20">
+<a href="#" class="dis-block how1-child2 f1-s-2 cl0 bo-all-1 bocl0 hov-btn1 trans-03 p-rl-5 p-t-2" title="Học Lập Trình Từ A - Z (HTML/CSS/JS - Bootstrap/JQuery - AngularJS - PHP/Laravel - Java v.v)">
+Projects
+</a>
+<h3 class="how1-child2 m-t-14 m-b-10">
+<a href="https://gokisoft.com/huong-dan-phan-tich-du-an-phan-mem.html" class="how-txt1 size-a-6 f1-l-1 cl0 hov-cl10 trans-03" title="Hướng dẫn phân tích dự án phần mềm">
+Hướng dẫn phân tích dự án phần mềm
+</a>
+</h3>
+<span class="how1-child2">
+<span class="f1-s-4 cl11">
+TRẦN VĂN ĐIỆP
+</span>
+<span class="f1-s-3 cl11 m-rl-3">
+-
+</span>
+<span class="f1-s-3 cl11">
+09:57 06/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+<div class="col-md-6 p-rl-1">
+<div class="row m-rl--1">
+<div class="col-12 p-rl-1 p-b-2">
+<div class="bg-img1 size-a-4 how1 pos-relative" style="background-image: url(https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg);">
+<a href="https://gokisoft.com/bai-tap-quan-ly-sach--tac-gia-lap-trinh-jspservlet.html" class="dis-block how1-child1 trans-03"></a>
+<div class="flex-col-e-s s-full p-rl-25 p-tb-24">
+<a href="#" class="dis-block how1-child2 f1-s-2 cl0 bo-all-1 bocl0 hov-btn1 trans-03 p-rl-5 p-t-2" title="Bài tập - Quản lý sách &amp; tác giả - Lập trình JSP/Servlet">
+Web Component Development (SERVJSP)
+</a>
+<h3 class="how1-child2 m-t-14">
+<a href="https://gokisoft.com/bai-tap-quan-ly-sach--tac-gia-lap-trinh-jspservlet.html" class="how-txt1 size-a-7 f1-l-2 cl0 hov-cl10 trans-03" title="Bài tập - Quản lý sách &amp; tác giả - Lập trình JSP/Servlet">
+Bài tập - Quản lý sách &amp; tác giả - Lập trình JSP/Servlet
+</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="col-sm-6 p-rl-1 p-b-2">
+<div class="bg-img1 size-a-5 how1 pos-relative" style="background-image: url(https://res.cloudinary.com/ziczacgroup/image/upload/v1584677107/piu7hovjcwyy5evcgtfb.png); background-size: contain; background-position: top;">
+<a href="https://gokisoft.com/javafree-lo-trinh-hoc-java-basic-toi-java-advanced.html" class="dis-block how1-child1 trans-03"></a>
+<div class="flex-col-e-s s-full p-rl-25 p-tb-20">
+<a href="#" class="dis-block how1-child2 f1-s-2 cl0 bo-all-1 bocl0 hov-btn1 trans-03 p-rl-5 p-t-2" title="JavaFree- Lộ trình học Java Basic tới Java Advanced">
+Java Basic
+</a>
+<h3 class="how1-child2 m-t-14">
+<a href="https://gokisoft.com/javafree-lo-trinh-hoc-java-basic-toi-java-advanced.html" class="how-txt1 size-h-1 f1-m-1 cl0 hov-cl10 trans-03" title="JavaFree- Lộ trình học Java Basic tới Java Advanced">
+JavaFree- Lộ trình học Java Basic tới Java Advanced
+</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="col-sm-6 p-rl-1 p-b-2">
+<div class="bg-img1 size-a-5 how1 pos-relative" style="background-image: url(https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg); background-size: contain; background-position: top;">
+<a href="https://gokisoft.com/bai-tap-file-lap-trinh-c.html" class="dis-block how1-child1 trans-03"></a>
+<div class="flex-col-e-s s-full p-rl-25 p-tb-20">
+<a href="#" class="dis-block how1-child2 f1-s-2 cl0 bo-all-1 bocl0 hov-btn1 trans-03 p-rl-5 p-t-2" title="Bài tập FILE - Lập trình C">
+Lập Trình C
+</a>
+<h3 class="how1-child2 m-t-14">
+<a href="https://gokisoft.com/bai-tap-file-lap-trinh-c.html" class="how-txt1 size-h-1 f1-m-1 cl0 hov-cl10 trans-03" title="Bài tập FILE - Lập trình C">
+Bài tập FILE - Lập trình C
+</a>
+</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg0 p-t-60 p-b-35">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-10 col-lg-8 p-b-20">
+<div class="how2 how2-cl4 flex-s-c m-r-10 m-r-0-sr991">
+<h3 class="f1-m-2 cl3 tab01-title" style="text-transform: uppercase;">
+Bài viết mới nhất
+</h3>
+</div>
+<div class="row p-t-35">
+<div class="col-sm-6 p-r-25 p-r-15-sr991">
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/bai-tap-file-lap-trinh-c.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="Bài tập FILE - Lập trình C">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/bai-tap-file-lap-trinh-c.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="Bài tập FILE - Lập trình C">
+Bài tập FILE - Lập trình C
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Người Đăng
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+19:11 29/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+<div class="col-sm-6 p-r-25 p-r-15-sr991">
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/bai-2-tao-website-bang-bootstrap-lap-trinh-bootstrapjquery.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="Bài 2 - Tạo website bằng bootstrap - Lập trình bootstrap/jquery">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/bai-2-tao-website-bang-bootstrap-lap-trinh-bootstrapjquery.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="Bài 2 - Tạo website bằng bootstrap - Lập trình bootstrap/jquery">
+Bài 2 - Tạo website bằng bootstrap - Lập trình bootstrap/jquery
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Người Đăng
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+14:47 28/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+<div class="col-sm-6 p-r-25 p-r-15-sr991">
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/share-code-tim-hieu-bootstrap.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="[Share Code] Tìm hiểu bootstrap">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/share-code-tim-hieu-bootstrap.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="[Share Code] Tìm hiểu bootstrap">
+[Share Code] Tìm hiểu bootstrap
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Người Đăng
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+14:46 28/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+<div class="col-sm-6 p-r-25 p-r-15-sr991">
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/bai-1-tao-website-bang-bootstrap-4.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="Bài 1 - Tạo website bằng bootstrap 4">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/bai-1-tao-website-bang-bootstrap-4.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="Bài 1 - Tạo website bằng bootstrap 4">
+Bài 1 - Tạo website bằng bootstrap 4
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Người Đăng
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+14:45 28/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+<div class="col-sm-6 p-r-25 p-r-15-sr991">
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/ket-qua-assignment-lop-t2008a.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1603867558/jjsrslwk0o1jsrud71rt.png" alt="KẾT QUẢ ASSIGNMENT - LỚP T2008A">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/ket-qua-assignment-lop-t2008a.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="KẾT QUẢ ASSIGNMENT - LỚP T2008A">
+KẾT QUẢ ASSIGNMENT - LỚP T2008A
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Người Đăng
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+13:47 28/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+<div class="col-sm-6 p-r-25 p-r-15-sr991">
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/quan-ly-motobike-quan-ly-xe-co-lap-trinh-c.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="Quản lý motobike - Quản lý xe cộ - Lập trình C">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/quan-ly-motobike-quan-ly-xe-co-lap-trinh-c.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="Quản lý motobike - Quản lý xe cộ - Lập trình C">
+Quản lý motobike - Quản lý xe cộ - Lập trình C
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Người Đăng
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+18:22 27/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+<div class="col-sm-6 p-r-25 p-r-15-sr991">
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/ejbead-viet-chuong-trinh-quan-ly-sach.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1584027866/dxbuncyhevc9ck1vjigy.png" alt="EJB-EAD- Viết chương trình quản lý sách">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/ejbead-viet-chuong-trinh-quan-ly-sach.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="EJB-EAD- Viết chương trình quản lý sách">
+EJB-EAD- Viết chương trình quản lý sách
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Người Đăng
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+19:44 26/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+<div class="col-sm-6 p-r-25 p-r-15-sr991">
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/share-code-huong-dan-chua-bai-tap-quan-ly-sinh-vien-lap-trinh-ejb-ead.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="[Share Code] Hướng dẫn chữa bài tập quản lý sinh viên - Lập trình EJB EAD">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/share-code-huong-dan-chua-bai-tap-quan-ly-sinh-vien-lap-trinh-ejb-ead.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="[Share Code] Hướng dẫn chữa bài tập quản lý sinh viên - Lập trình EJB EAD">
+[Share Code] Hướng dẫn chữa bài tập quản lý sinh viên - Lập trình EJB EAD
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Người Đăng
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+19:44 26/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+<div class="col-sm-6 p-r-25 p-r-15-sr991">
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/test-tao-website-gioi-thieu-cong-ty-lap-trinh-htmlcssjs.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="[TEST] Tạo website giời thiệu công ty - Lập trình HTML/CSS/JS">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/test-tao-website-gioi-thieu-cong-ty-lap-trinh-htmlcssjs.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="[TEST] Tạo website giời thiệu công ty - Lập trình HTML/CSS/JS">
+[TEST] Tạo website giời thiệu công ty - Lập trình HTML/CSS/JS
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Người Đăng
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+14:39 26/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+<div class="col-sm-6 p-r-25 p-r-15-sr991">
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/test-kiem-tra-60-phut-if-else-switch-loop-trong-c-lap-trinh-c.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1600240850/fcmiqhmpz8r783qwoggo.png" alt="[Test] Kiểm tra 60 phút - if, else, switch, loop trong C - Lập trình C">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/test-kiem-tra-60-phut-if-else-switch-loop-trong-c-lap-trinh-c.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="[Test] Kiểm tra 60 phút - if, else, switch, loop trong C - Lập trình C">
+[Test] Kiểm tra 60 phút - if, else, switch, loop trong C - Lập trình C
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Người Đăng
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+20:11 24/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+<div class="col-sm-6 p-r-25 p-r-15-sr991">
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/share-code-tim-hieu-java-basic-lap-trinh-oop-lap-trinh-java.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="[Share Code] Tìm hiểu java basic - Lập trình OOP - Lập trình Java">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/share-code-tim-hieu-java-basic-lap-trinh-oop-lap-trinh-java.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="[Share Code] Tìm hiểu java basic - Lập trình OOP - Lập trình Java">
+[Share Code] Tìm hiểu java basic - Lập trình OOP - Lập trình Java
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Người Đăng
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+10:19 24/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+<div class="col-sm-6 p-r-25 p-r-15-sr991">
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/java-basic-oop-can-ban-tong-hop-vi-du-lap-trinh-huong-doi-tuong-trong-java-moi-bat-dau-voi-oop.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="Java basic- OOP - căn bản - Tổng hợp ví dụ lập trính hướng đổi tượng trong java - mới bắt đầu với OOP">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/java-basic-oop-can-ban-tong-hop-vi-du-lap-trinh-huong-doi-tuong-trong-java-moi-bat-dau-voi-oop.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="Java basic- OOP - căn bản - Tổng hợp ví dụ lập trính hướng đổi tượng trong java - mới bắt đầu với OOP">
+Java basic- OOP - căn bản - Tổng hợp ví dụ lập trính hướng đổi tượng trong java - mới bắt đầu với OOP
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Người Đăng
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+10:15 24/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+<div class="col-sm-12 p-r-25 p-r-15-sr991" style="margin-top: 20px">
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7242961778697092" data-ad-slot="3026237021"></ins>
+<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+</div>
+</div>
+<div class="col-md-10 col-lg-4">
+<div class="p-l-10 p-rl-0-sr991 p-b-20">
+
+<div class="p-b-55">
+<div class="how2 how2-cl4 flex-s-c m-b-30">
+<h3 class="f1-m-2 cl3 tab01-title">
+Quick Quizzz!!!
+</h3>
+</div>
+<div class="flex-wr-s-s m-rl--5" style="background: #ecebeb; padding: 8px;">
+<div class="form-group" style="width: 100% !important;">
+<label>
+<img src="https://www.gravatar.com/avatar/ae8d66100c882095c429167b0fc6737f.jpg?s=80&amp;d=mm&amp;r=g" class="user-image" alt="User Image" style="width: 35px !important" />
+<strong>TRẦN VĂN ĐIỆP</strong>
+<p>20:34 23/04/2020</p>
+<p style="font-weight: bold;">Bạn thích làm về mảng nào nhất?</p>
+</label>
+</div>
+<div class="checkbox" name="quiz_answer" style="display: flex; margin-top: 8px; margin-bottom: 8px;" onclick="switchQuiz(478, 0, )">
+<input type="checkbox" style="float: left; margin-top: 12px !important;" id="index0" index="0"><label style="float: left; margin-left: 10px; margin-top: -7px; cursor: pointer; border: solid 1px #f3f3f3; padding: 10px; margin-right: 10px" for="index0">Lập Trình Mobile Android</label> <img src="https://www.gravatar.com/avatar/ae8d66100c882095c429167b0fc6737f.jpg?s=80&d=mm&r=g" title="TRẦN VĂN ĐIỆP" class="user-image" alt="User Image" style="width: 35px !important" /><img src="https://www.gravatar.com/avatar/af7b1a912cb63a5c2d1432db54b2f2dd.jpg?s=80&d=mm&r=g" title="Trần Văn Điêp" class="user-image" alt="User Image" style="width: 35px !important" /><img src="https://www.gravatar.com/avatar/ee4661d1f9133c241d6c8287c7ea8ceb.jpg?s=80&d=mm&r=g" title="Trần Mạnh Dũng" class="user-image" alt="User Image" style="width: 35px !important" /><label class="numberCircle">+19</label>
+</div>
+<div class="checkbox" name="quiz_answer" style="display: flex; margin-top: 8px; margin-bottom: 8px;" onclick="switchQuiz(478, 1, )">
+<input type="checkbox" style="float: left; margin-top: 12px !important;" id="index1" index="1"><label style="float: left; margin-left: 10px; margin-top: -7px; cursor: pointer; border: solid 1px #f3f3f3; padding: 10px; margin-right: 10px" for="index1">Lập Trình Frontend</label> <img src="https://www.gravatar.com/avatar/c2ef7c316acb82467912bf5677b52a8b.jpg?s=80&d=mm&r=g" title="Đường Thanh Bình" class="user-image" alt="User Image" style="width: 35px !important" /><img src="https://www.gravatar.com/avatar/5db166b7b74443c5c221e4c0068d6da9.jpg?s=80&d=mm&r=g" title="Phí Văn Long" class="user-image" alt="User Image" style="width: 35px !important" /><img src="https://www.gravatar.com/avatar/5a1d730aa7a3ff117afa545ea99d03f3.jpg?s=80&d=mm&r=g" title="Trần Tuấn Anh" class="user-image" alt="User Image" style="width: 35px !important" /><label class="numberCircle">+6</label>
+</div>
+ <div class="checkbox" name="quiz_answer" style="display: flex; margin-top: 8px; margin-bottom: 8px;" onclick="switchQuiz(478, 2, )">
+<input type="checkbox" style="float: left; margin-top: 12px !important;" id="index2" index="2"><label style="float: left; margin-left: 10px; margin-top: -7px; cursor: pointer; border: solid 1px #f3f3f3; padding: 10px; margin-right: 10px" for="index2">Lập trình PHP/Laravel</label> <img src="https://www.gravatar.com/avatar/ae8d66100c882095c429167b0fc6737f.jpg?s=80&d=mm&r=g" title="TRẦN VĂN ĐIỆP" class="user-image" alt="User Image" style="width: 35px !important" /><img src="https://www.gravatar.com/avatar/c2ef7c316acb82467912bf5677b52a8b.jpg?s=80&d=mm&r=g" title="Đường Thanh Bình" class="user-image" alt="User Image" style="width: 35px !important" /><img src="https://www.gravatar.com/avatar/5db166b7b74443c5c221e4c0068d6da9.jpg?s=80&d=mm&r=g" title="Phí Văn Long" class="user-image" alt="User Image" style="width: 35px !important" /><label class="numberCircle">+14</label>
+</div>
+<div class="checkbox" name="quiz_answer" style="display: flex; margin-top: 8px; margin-bottom: 8px;" onclick="switchQuiz(478, 3, )">
+<input type="checkbox" style="float: left; margin-top: 12px !important;" id="index3" index="3"><label style="float: left; margin-left: 10px; margin-top: -7px; cursor: pointer; border: solid 1px #f3f3f3; padding: 10px; margin-right: 10px" for="index3">Theo Java Web (SpringBoot, ...)</label> <img src="https://www.gravatar.com/avatar/c2ef7c316acb82467912bf5677b52a8b.jpg?s=80&d=mm&r=g" title="Đường Thanh Bình" class="user-image" alt="User Image" style="width: 35px !important" /><img src="https://www.gravatar.com/avatar/98f1e29922dc48dd5d41b8f6cbce24e0.jpg?s=80&d=mm&r=g" title="Đỗ tuấn anh" class="user-image" alt="User Image" style="width: 35px !important" /><img src="https://www.gravatar.com/avatar/d3627ce786997fab24d1b790c91c6368.jpg?s=80&d=mm&r=g" title="hoangkhiem" class="user-image" alt="User Image" style="width: 35px !important" /><label class="numberCircle">+19</label>
+</div>
+<div class="checkbox" name="quiz_answer" style="display: flex; margin-top: 8px; margin-bottom: 8px;" onclick="switchQuiz(478, 4, )">
+<input type="checkbox" style="float: left; margin-top: 12px !important;" id="index4" index="4"><label style="float: left; margin-left: 10px; margin-top: -7px; cursor: pointer; border: solid 1px #f3f3f3; padding: 10px; margin-right: 10px" for="index4">Theo NodeJS</label> <img src="https://www.gravatar.com/avatar/114894070fbd15fc0c29ffdeab37f4b5.jpg?s=80&d=mm&r=g" title="Vũ Việt Đức" class="user-image" alt="User Image" style="width: 35px !important" /><img src="https://www.gravatar.com/avatar/565f27ecffbed3df91d80c107af48418.jpg?s=80&d=mm&r=g" title="Nguyen Duc Viet" class="user-image" alt="User Image" style="width: 35px !important" /><img src="https://www.gravatar.com/avatar/5a1d730aa7a3ff117afa545ea99d03f3.jpg?s=80&d=mm&r=g" title="Trần Tuấn Anh" class="user-image" alt="User Image" style="width: 35px !important" /><label class="numberCircle">+4</label>
+</div>
+<div class="checkbox" name="quiz_answer" style="display: flex; margin-top: 8px; margin-bottom: 8px;" onclick="switchQuiz(478, 5, )">
+<input type="checkbox" style="float: left; margin-top: 12px !important;" id="index5" index="5"><label style="float: left; margin-left: 10px; margin-top: -7px; cursor: pointer; border: solid 1px #f3f3f3; padding: 10px; margin-right: 10px" for="index5">Theo Ruby on Rail</label> <img src="https://www.gravatar.com/avatar/49c73db02b33c675d2086a8998a3ce70.jpg?s=80&d=mm&r=g" title="GokiSoft.Com" class="user-image" alt="User Image" style="width: 35px !important" />
+</div>
+<div class="checkbox" name="quiz_answer" style="display: flex; margin-top: 8px; margin-bottom: 8px;" onclick="switchQuiz(478, 6, )">
+<input type="checkbox" style="float: left; margin-top: 12px !important;" id="index6" index="6"><label style="float: left; margin-left: 10px; margin-top: -7px; cursor: pointer; border: solid 1px #f3f3f3; padding: 10px; margin-right: 10px" for="index6">Không biết gì để theo :D :P :D</label> <img src="https://www.gravatar.com/avatar/af7b1a912cb63a5c2d1432db54b2f2dd.jpg?s=80&d=mm&r=g" title="Trần Văn Điêp" class="user-image" alt="User Image" style="width: 35px !important" /><img src="https://www.gravatar.com/avatar/ecca255d725eed36a872105205af1b8e.jpg?s=80&d=mm&r=g" title="Minh Nghia" class="user-image" alt="User Image" style="width: 35px !important" /><img src="https://www.gravatar.com/avatar/76e646e11f1674fba03bddd0ae020813.jpg?s=80&d=mm&r=g" title="Hoàng Quang Huy" class="user-image" alt="User Image" style="width: 35px !important" /><label class="numberCircle">+14</label>
+</div>
+<a href="https://gokisoft.com/menu/quiz_list">>> Hiển Thị Quizzz</a>
+</div>
+</div>
+<div class="p-b-55" style="padding-top: 30px">
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7242961778697092" data-ad-slot="3026237021"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg0 p-t-70">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-10 col-lg-8">
+<div class="p-b-20">
+
+<div class="tab01 p-b-20">
+<div class="tab01-head how2 how2-cl1 bocl12 flex-s-c m-r-10 m-r-0-sr991">
+
+<h3 class="f1-m-2 cl12 tab01-title">
+Lập Trình C
+</h3>
+
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#tab1-1" role="tab">Chủ Đề Mới</a>
+</li>
+</ul>
+
+<a href="https://gokisoft.com/lap-trinh-c.htm" class="tab01-link f1-s-1 cl9 hov-cl10 trans-03">
+Xem Thêm
+<i class="fs-12 m-l-5 fa fa-caret-right"></i>
+</a>
+</div>
+
+<div class="tab-content p-t-35">
+
+<div class="tab-pane fade show active" id="tab1-1" role="tabpanel">
+<div class="row">
+<div class="col-sm-6 p-r-25 p-r-15-sr991">
+
+<div class="m-b-30">
+<a href="https://gokisoft.com/bai-tap-file-lap-trinh-c.html" class="wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="Bài tập FILE - Lập trình C" title="Bài tập FILE - Lập trình C">
+</a>
+<div class="p-t-20">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/bai-tap-file-lap-trinh-c.html" class="f1-m-3 cl2 hov-cl10 trans-03" title="Bài tập FILE - Lập trình C">
+Bài tập FILE - Lập trình C
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
+Lập Trình C
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+19:11 29/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+<div class="col-sm-6 p-r-25 p-r-15-sr991">
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/share-code-tim-hieu-function-trong-c-lap-trinh-c.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="[Share Code] Tìm hiểu function trong C - Lập trình C">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/share-code-tim-hieu-function-trong-c-lap-trinh-c.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="[Share Code] Tìm hiểu function trong C - Lập trình C">
+[Share Code] Tìm hiểu function trong C - Lập trình C
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Lập Trình C
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+19:11 22/10/2020
+</span>
+</span>
+</div>
+</div>
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/share-code-chia-se-code-struct-trong-c-lap-trinh-c.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="[Share Code] Chia sẻ code struct trong C - Lập trình C">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/share-code-chia-se-code-struct-trong-c-lap-trinh-c.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="[Share Code] Chia sẻ code struct trong C - Lập trình C">
+[Share Code] Chia sẻ code struct trong C - Lập trình C
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Lập Trình C
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+19:48 20/10/2020
+</span>
+</span>
+</div>
+</div>
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/share-code-tim-hieu-mang-2-chieu--con-tro-pointer-lap-trinh-c.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="[Share Code] Tìm hiểu mảng 2 chiều + con trỏ pointer - Lập trình C">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/share-code-tim-hieu-mang-2-chieu--con-tro-pointer-lap-trinh-c.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="[Share Code] Tìm hiểu mảng 2 chiều + con trỏ pointer - Lập trình C">
+[Share Code] Tìm hiểu mảng 2 chiều + con trỏ pointer - Lập trình C
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Lập Trình C
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+19:54 17/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-10 col-lg-4">
+<div class="p-l-10 p-rl-0-sr991 p-b-20">
+
+<div>
+<div class="how2 how2-cl4 flex-s-c">
+<h3 class="f1-m-2 cl3 tab01-title">
+Chủ đề mới nhất
+</h3>
+</div>
+<ul class="p-t-35">
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+1
+</div>
+<a href="https://gokisoft.com/share-code-loop--array-trong-c-lap-trinh-c.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="[Share Code] Loop &amp; Array trong C - Lap trinh C">
+[Share Code] Loop &amp; Array trong C - Lap trinh C
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+2
+</div>
+<a href="https://gokisoft.com/lap-trinh-c-ket-qua-thi-thuc-hanh.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="[Lập Trình C] Kết Quả Thi Thực Hành">
+[Lập Trình C] Kết Quả Thi Thực Hành
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+3
+</div>
+<a href="https://gokisoft.com/bai-4-on-luyen-thi-ly-thuyet-lap-trinh-c.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="Bài 4 - Ôn luyện thi lý thuyết Lập Trình C">
+Bài 4 - Ôn luyện thi lý thuyết Lập Trình C
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+4
+</div>
+<a href="https://gokisoft.com/bai-3-on-luyen-thi-ly-thuyet-lap-trinh-c.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="Bài 3 - Ôn luyện thi lý thuyết Lập Trình C">
+Bài 3 - Ôn luyện thi lý thuyết Lập Trình C
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+5
+</div>
+<a href="https://gokisoft.com/bai-2-on-luyen-thi-ly-thuyet-lap-trinh-c.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="Bài 2 - Ôn luyện thi lý thuyết lập trình C">
+Bài 2 - Ôn luyện thi lý thuyết lập trình C
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg0 p-t-70">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-10 col-lg-8">
+<div class="p-b-20">
+
+<div class="tab01 p-b-20">
+<div class="tab01-head how2 how2-cl1 bocl12 flex-s-c m-r-10 m-r-0-sr991">
+
+<h3 class="f1-m-2 cl12 tab01-title">
+Học HTML5 - CSS3
+</h3>
+
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#tab1-1" role="tab">Chủ Đề Mới</a>
+</li>
+</ul>
+
+<a href="https://gokisoft.com/hoc-html5-css3.htm" class="tab01-link f1-s-1 cl9 hov-cl10 trans-03">
+Xem Thêm
+<i class="fs-12 m-l-5 fa fa-caret-right"></i>
+</a>
+</div>
+
+<div class="tab-content p-t-35">
+
+<div class="tab-pane fade show active" id="tab1-1" role="tabpanel">
+<div class="row">
+<div class="col-sm-6 p-r-25 p-r-15-sr991">
+
+<div class="m-b-30">
+<a href="https://gokisoft.com/ket-qua-assignment-lop-t2008a.html" class="wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1603867558/jjsrslwk0o1jsrud71rt.png" alt="KẾT QUẢ ASSIGNMENT - LỚP T2008A" title="KẾT QUẢ ASSIGNMENT - LỚP T2008A">
+</a>
+<div class="p-t-20">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/ket-qua-assignment-lop-t2008a.html" class="f1-m-3 cl2 hov-cl10 trans-03" title="KẾT QUẢ ASSIGNMENT - LỚP T2008A">
+KẾT QUẢ ASSIGNMENT - LỚP T2008A
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
+Học HTML5 - CSS3
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+13:47 28/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+<div class="col-sm-6 p-r-25 p-r-15-sr991">
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/share-code-bai-tap-thiet-ke-form-gui-email-lap-trinh-htmlcssjs.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="[Share Code] Bài tập - Thiết kế form gửi email - Lập trình HTML/CSS/JS">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/share-code-bai-tap-thiet-ke-form-gui-email-lap-trinh-htmlcssjs.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="[Share Code] Bài tập - Thiết kế form gửi email - Lập trình HTML/CSS/JS">
+[Share Code] Bài tập - Thiết kế form gửi email - Lập trình HTML/CSS/JS
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Học HTML5 - CSS3
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+14:33 14/10/2020
+</span>
+</span>
+</div>
+</div>
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/bai-tap-on-luyen-iframe-lap-trinh-htmlcssjs.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="Bài tập ôn luyện IFrame - Lập trình HTML/CSS/JS">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/bai-tap-on-luyen-iframe-lap-trinh-htmlcssjs.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="Bài tập ôn luyện IFrame - Lập trình HTML/CSS/JS">
+Bài tập ôn luyện IFrame - Lập trình HTML/CSS/JS
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Học HTML5 - CSS3
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+16:20 12/10/2020
+</span>
+</span>
+</div>
+</div>
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/bai-tap-on-luyen-table-lap-trinh-htmlcssjs.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="Bài tập ôn luyện Table - Lập trình HTML/CSS/JS">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/bai-tap-on-luyen-table-lap-trinh-htmlcssjs.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="Bài tập ôn luyện Table - Lập trình HTML/CSS/JS">
+Bài tập ôn luyện Table - Lập trình HTML/CSS/JS
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Học HTML5 - CSS3
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+16:19 12/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-10 col-lg-4">
+<div class="p-l-10 p-rl-0-sr991 p-b-20">
+
+<div>
+<div class="how2 how2-cl4 flex-s-c">
+<h3 class="f1-m-2 cl3 tab01-title">
+Chủ đề mới nhất
+</h3>
+</div>
+<ul class="p-t-35">
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+1
+</div>
+<a href="https://gokisoft.com/bai-tap-thiet-ke-form-gui-email-lap-trinh-htmlcssjs.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="Bài tập - Thiết kế form gửi email - Lập trình HTML/CSS/JS">
+Bài tập - Thiết kế form gửi email - Lập trình HTML/CSS/JS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+2
+</div>
+<a href="https://gokisoft.com/share-code-huong-dan-thiet-ke-layout-htmlcss-lap-trinh-htmlcssjs.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="[Share Code] Hướng dẫn thiết kế layout HTML/CSS - Lập trình HTML/CSS/JS">
+[Share Code] Hướng dẫn thiết kế layout HTML/CSS - Lập trình HTML/CSS/JS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+3
+</div>
+<a href="https://gokisoft.com/share-code-huong-dan-tim-hieu-tags-can-ban-trong-htmlcss-lap-trinh-htmlcssjs.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="[Share Code] Hướng dẫn tìm hiểu tags căn bản trong HTML/CSS - Lập trình HTML/CSS/JS">
+[Share Code] Hướng dẫn tìm hiểu tags căn bản trong HTML/CSS - Lập trình HTML/CSS/JS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+4
+</div>
+<a href="https://gokisoft.com/share-code-tim-hieu-css-html-lap-trinh-htmlcssjs.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="[Share Code] Tìm hiểu CSS - HTML - Lập trình HTML/CSS/JS">
+[Share Code] Tìm hiểu CSS - HTML - Lập trình HTML/CSS/JS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+5
+</div>
+<a href="https://gokisoft.com/big-first-letter-css.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="Big first letter - css">
+Big first letter - css
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg0 p-t-70">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-10 col-lg-8">
+<div class="p-b-20">
+
+<div class="tab01 p-b-20">
+<div class="tab01-head how2 how2-cl1 bocl12 flex-s-c m-r-10 m-r-0-sr991">
+
+<h3 class="f1-m-2 cl12 tab01-title">
+Học Bootstrap
+</h3>
+
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#tab1-1" role="tab">Chủ Đề Mới</a>
+</li>
+</ul>
+
+<a href="https://gokisoft.com/hoc-bootstrap.htm" class="tab01-link f1-s-1 cl9 hov-cl10 trans-03">
+Xem Thêm
+<i class="fs-12 m-l-5 fa fa-caret-right"></i>
+</a>
+</div>
+
+<div class="tab-content p-t-35">
+
+<div class="tab-pane fade show active" id="tab1-1" role="tabpanel">
+<div class="row">
+<div class="col-sm-6 p-r-25 p-r-15-sr991">
+
+<div class="m-b-30">
+<a href="https://gokisoft.com/bai-2-tao-website-bang-bootstrap-lap-trinh-bootstrapjquery.html" class="wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="Bài 2 - Tạo website bằng bootstrap - Lập trình bootstrap/jquery" title="Bài 2 - Tạo website bằng bootstrap - Lập trình bootstrap/jquery">
+</a>
+<div class="p-t-20">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/bai-2-tao-website-bang-bootstrap-lap-trinh-bootstrapjquery.html" class="f1-m-3 cl2 hov-cl10 trans-03" title="Bài 2 - Tạo website bằng bootstrap - Lập trình bootstrap/jquery">
+Bài 2 - Tạo website bằng bootstrap - Lập trình bootstrap/jquery
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
+Học Bootstrap
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+14:47 28/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+<div class="col-sm-6 p-r-25 p-r-15-sr991">
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/share-code-tim-hieu-bootstrap.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="[Share Code] Tìm hiểu bootstrap">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/share-code-tim-hieu-bootstrap.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="[Share Code] Tìm hiểu bootstrap">
+[Share Code] Tìm hiểu bootstrap
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Học Bootstrap
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+14:46 28/10/2020
+</span>
+</span>
+</div>
+</div>
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/bai-1-tao-website-bang-bootstrap-4.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="Bài 1 - Tạo website bằng bootstrap 4">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/bai-1-tao-website-bang-bootstrap-4.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="Bài 1 - Tạo website bằng bootstrap 4">
+Bài 1 - Tạo website bằng bootstrap 4
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Học Bootstrap
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+14:45 28/10/2020
+</span>
+</span>
+</div>
+</div>
+
+<div class="flex-wr-sb-s m-b-30">
+<a href="https://gokisoft.com/bootstrap-4-form-dang-ky-tai-khoan-nguoi-dung.html" class="size-w-1 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1602505537/crzwbbgu9jyokggii5zq.jpg" alt="Bootstrap 4 - Form đăng ký tài khoản người dùng">
+</a>
+<div class="size-w-2">
+<h5 class="p-b-5">
+<a href="https://gokisoft.com/bootstrap-4-form-dang-ky-tai-khoan-nguoi-dung.html" class="f1-s-5 cl3 hov-cl10 trans-03" title="Bootstrap 4 - Form đăng ký tài khoản người dùng">
+Bootstrap 4 - Form đăng ký tài khoản người dùng
+</a>
+</h5>
+<span class="cl8">
+<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+Học Bootstrap
+</a>
+<span class="f1-s-3 m-rl-3">
+by TRẦN VĂN ĐIỆP -
+</span>
+<span class="f1-s-3">
+19:25 12/10/2020
+</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-10 col-lg-4">
+<div class="p-l-10 p-rl-0-sr991 p-b-20">
+
+<div>
+<div class="how2 how2-cl4 flex-s-c">
+<h3 class="f1-m-2 cl3 tab01-title">
+Chủ đề mới nhất
+</h3>
+</div>
+<ul class="p-t-35">
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+1
+</div>
+<a href="https://gokisoft.com/bootstrap-4-filters-advanced.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="Bootstrap 4 Filters (Advanced)">
+Bootstrap 4 Filters (Advanced)
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+2
+</div>
+<a href="https://gokisoft.com/bootstrap-4-media-objects.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="Bootstrap 4 Media Objects">
+Bootstrap 4 Media Objects
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+3
+</div>
+<a href="https://gokisoft.com/bootstrap-4-icons.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="Bootstrap 4 Icons">
+Bootstrap 4 Icons
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+4
+</div>
+<a href="https://gokisoft.com/bootstrap-4-flex.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="Bootstrap 4 Flex">
+Bootstrap 4 Flex
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+5
+</div>
+<a href="https://gokisoft.com/bootstrap-4-utilities.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="Bootstrap 4 Utilities">
+Bootstrap 4 Utilities
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<a href="https://gokisoft.com/admin/edit-update-post/new" title="Sửa" target="_self" class="float" style="bottom: 100px; background-color: #d0021b !important;">
+<i class="fa fa-plus my-float"></i>
+</a>
+<a href="#create_quiz" title="Create quiz" data-toggle="modal" data-target="#quiz" class="float" style="bottom: 40px; background-color: #17b978 !important;">
+<i class="fa fa-question-circle my-float"></i>
+</a>
+
+<footer>
+<div class="bg2 p-t-40 p-b-25">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 p-b-20">
+<div class="size-h-3 flex-s-c">
+<a href="https://gokisoft.com">
+<img style="height: 65px !important;" class="max-s-full" src="https://res.cloudinary.com/ziczacgroup/image/upload/v1587623413/qhwncq3wtjkrsyke6ayw.png" alt="LOGO">
+</a>
+</div>
+<div class="f1-s-1 cl11 p-b-16">
+<span style="color: #aaa;">Chúng tôi tạo ra website nay với mong muốn chia sẻ những kiến thức và kinh nghiệm thực tiễn mà chung tôi đã có được - nhằm giúp cho những bạn mới bắt đầu học lập trình trở nên dễ dàng hơn và có lộ trình học cụ thể &amp; rút ngắn thời gian học</span>
+</div>
+<p class="f1-s-1 cl11 p-b-16">
+Bạn có câu hỏi? Hãy email chúng tôi tại <a href="/cdn-cgi/l/email-protection#32555d595b415d54461c515d5f72555f535b5e1c515d5f" class="email"><span class="__cf_email__" data-cfemail="3f585054564c50594b115c50527f58525e5653115c5052">[email&#160;protected]</span></a>
+</p>
+<div class="p-t-15">
+<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+<span class="fab fa-facebook-f"></span>
+</a>
+<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+<span class="fab fa-twitter"></span>
+</a>
+<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+<span class="fab fa-pinterest-p"></span>
+</a>
+<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+<span class="fab fa-vimeo-v"></span>
+</a>
+<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+<span class="fab fa-youtube"></span>
+</a>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 p-b-20">
+<div class="size-h-3 flex-s-c">
+<h5 class="f1-m-7 cl0" style="text-transform: uppercase;">
+Bài viết nổi bật
+</h5>
+</div>
+<ul>
+<li class="flex-wr-sb-s p-b-20">
+<a href="https://gokisoft.com/bai-tap-file-lap-trinh-c.html" class="size-w-4 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="IMG">
+</a>
+<div class="size-w-5">
+<h6 class="p-b-5">
+<a href="https://gokisoft.com/bai-tap-file-lap-trinh-c.html" class="f1-s-5 cl11 hov-cl10 trans-03">
+Bài tập FILE - Lập trình C
+</a>
+</h6>
+<span class="f1-s-3 cl6">
+ 29-10-2020
+</span>
+</div>
+</li>
+<li class="flex-wr-sb-s p-b-20">
+<a href="https://gokisoft.com/bai-2-tao-website-bang-bootstrap-lap-trinh-bootstrapjquery.html" class="size-w-4 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="IMG">
+</a>
+<div class="size-w-5">
+<h6 class="p-b-5">
+<a href="https://gokisoft.com/bai-2-tao-website-bang-bootstrap-lap-trinh-bootstrapjquery.html" class="f1-s-5 cl11 hov-cl10 trans-03">
+Bài 2 - Tạo website bằng bootstrap - Lập trình bootstrap/jquery
+</a>
+</h6>
+<span class="f1-s-3 cl6">
+28-10-2020
+</span>
+</div>
+</li>
+<li class="flex-wr-sb-s p-b-20">
+<a href="https://gokisoft.com/share-code-tim-hieu-bootstrap.html" class="size-w-4 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="IMG">
+</a>
+<div class="size-w-5">
+<h6 class="p-b-5">
+<a href="https://gokisoft.com/share-code-tim-hieu-bootstrap.html" class="f1-s-5 cl11 hov-cl10 trans-03">
+[Share Code] Tìm hiểu bootstrap
+</a>
+</h6>
+<span class="f1-s-3 cl6">
+28-10-2020
+</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="col-sm-6 col-lg-4 p-b-20">
+<div class="size-h-3 flex-s-c">
+<h5 class="f1-m-7 cl0" style="text-transform: uppercase;">
+Bài viết mới nhất
+</h5>
+</div>
+<li class="flex-wr-sb-s p-b-20">
+<a href="https://gokisoft.com/bai-1-tao-website-bang-bootstrap-4.html" class="size-w-4 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="IMG">
+</a>
+<div class="size-w-5">
+<h6 class="p-b-5">
+<a href="https://gokisoft.com/bai-1-tao-website-bang-bootstrap-4.html" class="f1-s-5 cl11 hov-cl10 trans-03">
+Bài 1 - Tạo website bằng bootstrap 4
+</a>
+</h6>
+<span class="f1-s-3 cl6">
+28-10-2020
+</span>
+</div>
+</li>
+<li class="flex-wr-sb-s p-b-20">
+<a href="https://gokisoft.com/ket-qua-assignment-lop-t2008a.html" class="size-w-4 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1603867558/jjsrslwk0o1jsrud71rt.png" alt="IMG">
+</a>
+<div class="size-w-5">
+<h6 class="p-b-5">
+<a href="https://gokisoft.com/ket-qua-assignment-lop-t2008a.html" class="f1-s-5 cl11 hov-cl10 trans-03">
+KẾT QUẢ ASSIGNMENT - LỚP T2008A
+</a>
+</h6>
+<span class="f1-s-3 cl6">
+28-10-2020
+</span>
+</div>
+</li>
+<li class="flex-wr-sb-s p-b-20">
+<a href="https://gokisoft.com/quan-ly-motobike-quan-ly-xe-co-lap-trinh-c.html" class="size-w-4 wrap-pic-w hov1 trans-03">
+<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1583834689/vf4gyxt7gmthx4eykvlp.jpg" alt="IMG">
+</a>
+<div class="size-w-5">
+<h6 class="p-b-5">
+<a href="https://gokisoft.com/quan-ly-motobike-quan-ly-xe-co-lap-trinh-c.html" class="f1-s-5 cl11 hov-cl10 trans-03">
+Quản lý motobike - Quản lý xe cộ - Lập trình C
+</a>
+</h6>
+<span class="f1-s-3 cl6">
+27-10-2020
+</span>
+</div>
+</li>
+</div>
+</div>
+</div>
+</div>
+<div class="bg11">
+<div class="container size-h-4 flex-c-c p-tb-15">
+<span class="f1-s-1 cl0 txt-center">
+<a href="#" class="f1-s-1 cl10 hov-link1">
+Copyright &copy; 2019 All rights reserved
+</span>
+</div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-146138928-1"></script>
+<script>
+					  window.dataLayer = window.dataLayer || [];
+					  function gtag(){dataLayer.push(arguments);}
+					  gtag('js', new Date());
+					  gtag('config', 'UA-146138928-1');
+					</script>
+
+<script>
+					  !function(f,b,e,v,n,t,s)
+					  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+					  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+					  if(!f._fbq)f._fbq=n;
+						n.push=n;
+						n.loaded=!0;
+						n.version='2.0';
+						n.queue=[];
+						t=b.createElement(e);
+						t.async=!0;
+						t.src=v;
+						s=b.getElementsByTagName(e)[0];
+					  s.parentNode.insertBefore(t,s)}(window, document,'script',
+					  'https://connect.facebook.net/en_US/fbevents.js');
+					  fbq('init', '1217882781722846');
+					  fbq('track', 'PageView');
+					</script>
+<noscript><img height="1" width="1" style="display:none"
+					  src="https://www.facebook.com/tr?id=1217882781722846&ev=PageView&noscript=1"
+					/></noscript>
+ </footer>
+<div id="snackbar">Đã sao chép!!!</div>
+
+<div class="btn-back-to-top" id="myBtn">
+<span class="symbol-btn-back-to-top">
+<span class="fas fa-angle-up"></span>
+</span>
+</div>
+
+<div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog" role="document" data-dismiss="modal">
+<div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
+<div class="wrap-video-mo-01">
+<div class="video-mo-01">
+<iframe src="https://www.youtube.com/embed/wJnBTPUQS5A?rel=0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://gokisoft.com/themes/gokisoft/vendor/jquery/jquery-3.2.1.min.js"></script>
+
+<script src="https://gokisoft.com/themes/gokisoft/vendor/animsition/js/animsition.min.js"></script>
+
+<script src="https://gokisoft.com/themes/gokisoft/vendor/bootstrap/js/popper.js"></script>
+<script src="https://gokisoft.com/themes/gokisoft/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="https://gokisoft.com/themes/gokisoft-old/lib/rainbow/rainbow.min.js"></script>
+<script src="https://gokisoft.com/themes/gokisoft-old/lib/rainbow/language/javascript.js"></script>
+<script src="https://gokisoft.com/themes/gokisoft/js/main.js"></script>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s);
+ js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+  function copyDivToClipboard(id) {
+    // var range = document.getSelection().getRangeAt(0);
+    // range.selectNode(document.getElementById(id));
+    // window.getSelection().addRange(range);
+    // document.execCommand("copy")
+    var text = $("#"+id).text();
+
+    var dummy = document.createElement("textarea");
+    document.body.appendChild(dummy);
+    dummy.innerHTML = text;
+    dummy.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummy);
+
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar");
+
+    // Add the "show" class to DIV
+    x.className = "show";
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+    </script>
+
+<style type="text/css">
+  .quiz_answer_content:empty:before {
+    content:attr(data-placeholder);
+    color:gray
+  }
+
+  .tag.label.label-info {
+    background: #f0ad4e !important;
+    border-color: #eea236 !important;
+    padding: 3px !important;
+  }
+
+  .bootstrap-tagsinput {
+    width: 100% !important;
+  }
+
+  .numberCircle {
+      float: left;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 5px;
+      background: #fff;
+      border: 2px solid grey;
+      color: grey;
+      text-align: center;
+      font-weight: bold;
+  }
+</style>
+<link rel="stylesheet" href="https://gokisoft.com/vendor/TagJs/bootstrap-tagsinput.css">
+<script src="https://gokisoft.com/vendor/TagJs/bootstrap-tagsinput.js"></script>
+<div class="modal" id="quiz" style="background: rgba(0, 0, 0, 0.5);">
+<div class="modal-dialog">
+<div class="modal-content">
+
+<div class="modal-header">
+<h4 class="modal-title" style="text-transform: uppercase; color: red !important;">Tạo câu hỏi (Quizzz)</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" id="quiz_answer_content_group">
+<div class="form-group">
+<label>Câu hỏi</label>
+<input type="text" name="quiz_title" class="form-control" placeholder="Nhập câu hỏi vào đây ..." style="border: none !important;">
+</div>
+<div class="form-group">
+<label>Đáp Án (Đáp án rỗng sẽ không hiển thị)</label>
+</div>
+<div class="checkbox" name="quiz_answer" style="display: flex;">
+<input type="checkbox" style="float: left;"><label contenteditable="true" name="quiz_answer_content" class="quiz_answer_content" style="float: left;min-width: 60% !important; margin-left: 10px; margin-top: -7px" onkeyup="onkeyupQuiz()" data-placeholder="Vào đáp án ..."></label>
+</div>
+</div>
+<div class="modal-body">
+<div class="form-group">
+<label>Tags:</label>
+<input type="text" name="tags" class="form-control tagsInput" data-role="tagsinput" width="100% !important;" placeholder="Nhập tags vào đây ..." style="border: none !important;">
+</div>
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Huỷ</button>
+<button type="button" class="btn btn-success" data-dismiss="modal" onclick="submitQuiz()">Hoàn Thành</button>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+  function onkeyupQuiz() {
+    var answers = jQuery('[name=quiz_answer_content]')
+    var isAddMore = true;
+    for (var i = 0; i < answers.length; i++) {
+      if($(answers[i]).html().length == 0 || $(answers[i]).html().includes('Vào đáp')) {
+        isAddMore = false;
+        break;
+      }
+    }
+    if(isAddMore) {
+      $('#quiz_answer_content_group').append(`<div class="checkbox" name="quiz_answer" style="display: flex;">
+          <input type="checkbox" style="float: left;"><label contenteditable="true" name="quiz_answer_content" style="float: left;min-width: 60% !important; margin-left: 10px; margin-top: -7px" onkeyup="onkeyupQuiz()" data-placeholder="Vào đáp án ..." class="quiz_answer_content"></label>
+        </div>`)
+    }
+  }
+
+  function submitQuiz() {
+    if($('[name=quiz_title]').val() == '') {
+      alert('Không được để trống tiêu đề Quiz.')
+      return;
+    }
+    var content = []
+    var answers = jQuery('[name=quiz_answer_content]')
+    for (var i = 0; i < answers.length; i++) {
+      if($(answers[i]).html().length == 0 || $(answers[i]).html().includes('Vào đáp')) {
+      } else {
+        content.push($(answers[i]).html())
+      }
+    }
+    if(content.length == 0) {
+      alert('Quiz của bạn không có đáp án nào.')
+      return;
+    }
+    content = JSON.stringify(content)
+
+    $.post('https://gokisoft.com/menu/add_menu_expand_content', {
+      content_id: '',
+      id: 473,
+      _token: "RqRV6fDpRMfhGoBw13XwKPL3F9tsUbVxraSqkWRr",
+      title: $('[name=quiz_title]').val(),
+      tags: $('[name=tags]').val(),
+      content: content
+    }, function(data) {
+      location.reload()
+    })
+  }
+
+  function switchQuiz(id, index, status) {
+    $.get('https://gokisoft.com/menu/switch_quiz?id='+id+'&index='+index+'&status='+status, function(data) {
+      location.reload()
+    })
+  }
+
+  function deleteBrand(id) {
+    option = confirm('Bạn chắc chắn muốn xoá menu này không?')
+    if(option) {
+      $.post("https://gokisoft.com/menu/delete_menu_expand_content",
+      {
+          _token: "RqRV6fDpRMfhGoBw13XwKPL3F9tsUbVxraSqkWRr",
+          id: id,
+      },
+      function(data, status){
+        location.reload()
+      });
+    }
+  }
+</script></body>
+</html>

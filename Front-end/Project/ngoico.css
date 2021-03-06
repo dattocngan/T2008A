@@ -1,0 +1,12 @@
+.title-name{
+	font-size: 20px;
+	font-weight: 500;
+	color: black;
+	text-decoration: none;
+}
+.text-title{
+	color: #a19a87;
+}
+a .title-name:hover{
+	color: #f25079;
+}

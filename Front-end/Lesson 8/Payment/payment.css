@@ -1,0 +1,92 @@
+.main{
+    margin: 0 auto;
+    width: 600px;
+    height: 503px;
+    background-color: rgb(168, 235, 201);
+    display: flow-root;
+}
+.top{
+    width: 280px;
+    height: 30px;
+    border: 1px solid grey;
+    background-color: rgb(188, 213, 229);
+    color: rgb(80, 121, 160);
+    padding-left: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.information1{
+    border: 1px solid grey;
+    border-radius: 3px;
+    width: 550px;
+    height: 140px;
+    margin-top: 40px;
+    margin-left: 5px;
+}
+.information2{
+    border: 1px solid grey;
+    border-radius: 3px;
+    width: 550px;
+    height: 190px;
+    margin-top: 40px;
+    margin-left: 5px;
+}
+.onborder1{
+    position:absolute;
+    margin-top: 73px;
+    margin-left: 482px;
+    background-color:rgb(168, 235, 201) ;
+    color: rgb(89, 134, 175);
+    font-size: 18px;
+}
+.onborder2{
+    position:absolute;
+    margin-top: 254px;
+    margin-left: 482px;
+    background-color:rgb(168, 235, 201) ;
+    color: rgb(89, 134, 175);
+    font-size: 18px;
+}
+table{
+    margin-top: 15px;
+    margin-left: 25px;
+    background-color:rgb(115, 214, 218) ;
+    border-color: rgb(69, 136, 141);
+}
+td{
+    border-color: rgb(69, 136, 141);
+    background-color: rgb(214, 211, 211);
+}
+.yellowhover:focus{
+    background-color: yellow;
+}
+li{
+    padding-right: 5px;
+}
+.footer{
+    margin-top: 5px;
+    width: 61.84%;
+    height: 30px;
+    background-color: rgb(214, 211, 211);
+    border: 1px solid grey;
+    display: flex;
+    padding: 5px;
+    padding-left: 222px;
+}
+.reset{
+    cursor: pointer;
+}
+.submit{
+    margin-right: 7px;
+    text-align: center;
+    border: 1px solid grey;
+    background-color: #efefef;
+    padding-top: 4px;
+    border-radius: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: rgb(211, 207, 207);
+}

@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(236, 231, 231) !important;
+    }
+.about{
+	color:black;
+}
+.about:hover{
+	color: #5c0ee3;
+	text-decoration:none;
+}
+.about h2{
+	margin-top: 50px;
+}
+.col-md-3{
+	background-color: white;
+	text-align: center;
+}
+.page-item{
+	list-style-type: none;
+	margin-right: 20px;
+	margin-top: 100px;
+}
+.page-item .page-nd{
+	padding-bottom: 50px;
+}
+.page-one{
+	color: #169bde;
+}
+.page-one:hover{
+	color: #5c0ee3;
+	text-decoration:none;
+}
+.col-md-8{
+	margin-left: 80px;
+}
+.his{
+	font-weight: bold;
+	font-weight: 650;
+}

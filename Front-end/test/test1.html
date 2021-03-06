@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		str1=prompt('Nhập chuỗi gốc:')
+		str2=prompt('Nhập chuỗi cần tìm kiếm:')
+		document.write('Chuỗi gốc: ' + str1 + '<br><br>')
+		document.write('Chuỗi cần tìm kiếm: ' + str2 + '<br><br>')
+		var count=0
+		//Neu str2 ko co trong str1 thi tra ve ket qua -1
+		while(str1.indexOf(str2)>0){
+			document.write('Chuỗi cần tìm xuất hiện ở: ')
+			break
+		}
+		a=0
+		while(str1.indexOf(str2)>0){
+			document.write(str1.indexOf(str2)+a+'\xa0')
+			a+=str2.length
+			str1=str1.replace(str2,'')
+			count++
+		}
+		if(count!=0){
+			document.write('<br>'+'Chuỗi này xuất hiện '+count+' lần')
+		}
+		else{
+			alert('Không có chuỗi cần tìm kiếm trong chuỗi gốc')
+		}
+	</script>
+</body>
+</html>

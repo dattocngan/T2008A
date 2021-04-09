@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD -->
+<!DOCTYPE CLASS_LIST [
+	<!ELEMENT class-list (class)>
+	<!ELEMENT class (class-name, class-teacher, student-list)>
+	<!ELEMENT class-teacher (name,age)>
+	<!ELEMENT student-list (name,age)>
+	<!ELEMENT class-name (#PCDATA)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT age (#PCDATA)>
+]>
+<!-- Content -->
+<class-list>
+	<class>
+		<class-name>D20CQCN01-B</class-name>
+		<class-teacher>
+			<name>Nguyen Manh Son</name>
+			<age>30</age>
+		</class-teacher>
+		<student-list>
+			<student>
+				<name>Nguyen Tien Dat</name>
+				<age>18</age>
+			</student>
+			<student>
+				<name>Duong Quang Du</name>
+				<age>18</age>
+			</student>
+			<student>
+				<name>Duong Hong Duc</name>
+				<age>18</age>
+			</student>
+		</student-list>
+	</class>
+	<class>
+		<class-name>T2008A</class-name>
+		<class-teacher>
+			<name>Tran Van Diep</name>
+			<age>33</age>
+		</class-teacher>
+		<student-list>
+			<student>
+				<name>Nguyen Tien Dat</name>
+				<age>18</age>
+			</student>
+			<student>
+				<name>Do Trung Duc</name>
+				<age>20</age>
+			</student>
+			<student>
+				<name>Dang Tran Nhat Minh</name>
+				<age>17</age>
+			</student>
+		</student-list>
+	</class>
+</class-list>
+	

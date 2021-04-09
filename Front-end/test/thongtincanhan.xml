@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD -->
+
+<!-- Content -->
+
+<profile>
+	<name>Nguyen Tien Dat</name>
+	<gender>Nam</gender>
+	<birthday>18-04-2002</birthday>
+	<status>In a relationship</status>
+	<interest>
+		<sport>Football, Basketball, Badminton, Swimming,...</sport>
+		<game>League of Legends, PES 2021, Naruto Shippuden, Dragon Ball Xenoverse 2,...</game>
+		<music>
+			<us-uk>Shape Of You, Despacito, Until You,...</us-uk>
+			<v-pop>Em cua ngay hom qua, Nang tho, Thang tu la loi noi doi cua em,...</v-pop>
+		</music>
+	</interest>
+	<program-language>HTML, CSS, JS, C, C++, JQuery, Bootstrap 4, Python, Java, XML, Swing Patterns,...</program-language>
+	<learning-equipment>
+		<laptop>
+			<name>Laptop HP Pavilion 15-cs3063TX i7-1065G7/8GB/512GB/WIN10</name>
+		</laptop>
+		<book-list>
+			<book>100 bai code thieu nhi</book>
+			<book>Toi da day thi nhu the nao?</book>
+		</book-list>
+	</learning-equipment>
+</profile>

@@ -1,43 +1,44 @@
-<!-- <?php
-    if (isset($_POST['fullname'])) {
-        $fullname = $_POST['fullname'];
-        $address = $_POST['address'];
-        $email = $_POST['email'];
-    
-        echo 'Fullname : ' . $fullname . '<br/>';
-
-        echo 'Address : ' . $address . '<br/>';
-    
-        echo 'Email : ' . $email . '<br/>';
-    }
-?> -->
+<?php
+    session_start();
+    require_once('cookie1.php');
+    Register();
+?>
 
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Hoc PHP</title>
+    <title>Register</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
-  <body>
+  <body style="background-color: pink;">
     <div class="container-fluid">
-        <form action="process.php" method="post">
+        <form action="" method="post">
             <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Enter email">
+              <label for="fullname">Ho va ten:</label>
+              <input type="text" name="fullname" id="fullname" class="form-control" placeholder="Nhap ho va ten">
             </div>
             <div class="form-group">
-                <label for="Fullname">Fullname:</label>
-                <input type="text" name="fullname" id="text" class="form-control" placeholder="Enter Fullname">
+              <label for="username">Ten dang nhap:</label>
+              <input type="text" name="username" id="username" class="form-control" placeholder="Nhap ten dang nhap">
             </div>
             <div class="form-group">
-                <label for="Address">Address:</label>
-                <input type="text" name="address" id="address" class="form-control" placeholder="Enter Address">
+              <label for="password">Mat khau:</label>
+              <input type="password" name="password" id="password" class="form-control" placeholder="Nhap mat khau">
             </div>
-            <button class="btn btn-primary">Register</button>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" class="form-control" placeholder="Nhap email">
+            </div>
+            <div class="form-group">
+              <label for="phonenumber">So dien thoai:</label>
+              <input type="tel" name="phonenumber" id="phonenumber" class="form-control" placeholder="Nhap so dien thoai">
+            </div>
+            <button  class="btn btn-success" btn-lg btn-block">Register</button>
         </form>
     </div>
     <!-- Optional JavaScript -->
@@ -46,4 +47,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
-</html>   
+</html>

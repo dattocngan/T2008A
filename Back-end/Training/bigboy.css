@@ -1,0 +1,31 @@
+body{
+    background-color: lightpink !important;
+}
+h1{
+    font-size: 25px;
+    text-align: center;
+}
+h2{
+    background-color: pink;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+}
+p{
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    background-color: white;
+}
+li{
+    font-weight: bold;
+}
+table,th,td{
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+a:hover{
+    color: red !important;
+}

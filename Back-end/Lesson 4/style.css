@@ -1,0 +1,7 @@
+.card-header{
+    background: rgb(116, 154, 224) !important;
+    color: white;
+}
+label{
+    font-weight: bold !important;
+}
